@@ -1,0 +1,650 @@
+zc
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css">
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			.mui-bar~.mui-content .mui-fullscreen {
+				top: 44px;
+				height: auto;
+			}
+			.mui-pull-top-tips {
+				position: absolute;
+				top: -20px;
+				left: 50%;
+				margin-left: -25px;
+				width: 40px;
+				height: 40px;
+				border-radius: 100%;
+				z-index: 1;
+			}
+			.mui-bar~.mui-pull-top-tips {
+				top: 24px;
+			}
+			.mui-pull-top-wrapper {
+				width: 42px;
+				height: 42px;
+				display: block;
+				text-align: center;
+				background-color: #efeff4;
+				border: 1px solid #ddd;
+				border-radius: 25px;
+				background-clip: padding-box;
+				box-shadow: 0 4px 10px #bbb;
+				overflow: hidden;
+			}
+			.mui-pull-top-tips.mui-transitioning {
+				-webkit-transition-duration: 200ms;
+				transition-duration: 200ms;
+			}
+			.mui-pull-top-tips .mui-pull-loading {
+				/*-webkit-backface-visibility: hidden;
+				-webkit-transition-duration: 400ms;
+				transition-duration: 400ms;*/
+				margin: 0;
+			}
+			.mui-pull-top-wrapper .mui-icon,
+			.mui-pull-top-wrapper .mui-spinner {
+				margin-top: 7px;
+			}
+			.mui-pull-top-wrapper .mui-icon.mui-reverse {
+				/*-webkit-transform: rotate(180deg) translateZ(0);*/
+			}
+			.mui-pull-bottom-tips {
+				text-align: center;
+				background-color: #efeff4;
+				font-size: 15px;
+				line-height: 40px;
+				color: #777;
+			}
+			.mui-pull-top-canvas {
+				overflow: hidden;
+				background-color: #fafafa;
+				border-radius: 40px;
+				box-shadow: 0 4px 10px #bbb;
+				width: 40px;
+				height: 40px;
+				margin: 0 auto;
+			}
+			.mui-pull-top-canvas canvas {
+				width: 40px;
+			}
+			.mui-slider-indicator.mui-segmented-control {
+				background-color: #efeff4;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a tapmode onclick="closeWin()" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">不选的 k线 </h1>
+		</header>
+		
+		
+		
+		<script type="application/javascript">
+			
+			function closeWin(){
+    	window.location.href="../index.html";
+    	//history.go(-1);
+
+        api.closeWin({
+        });
+    }
+			
+			
+		</script>
+		
+		
+		
+		<div class="mui-content">
+			<div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll">
+						<a class="mui-control-item mui-active" href="#item1mobile">
+							选股1
+						</a>
+						<a class="mui-control-item" href="#item2mobile">
+							规律
+						</a>
+						<a class="mui-control-item" href="#item3mobile">
+							风险
+						</a>
+						<a class="mui-control-item" href="#item4mobile">
+							形态
+						</a>
+						<a class="mui-control-item" href="#item5mobile">
+							主力
+						</a>
+						<a class="mui-control-item" href="#item6mobile">
+							指标
+						</a>
+						<a class="mui-control-item" href="#item7mobile">
+							买卖
+						</a>
+						
+					</div>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										1.前面的拉升资金有高位的。
+									</li>
+									<li class="mui-table-view-cell">
+										2.均线或者趋势线一直正常向下的，即使主力资金一直上升。
+									</li>
+									<li class="mui-table-view-cell">
+										3.主力资金一直向上，大于3天，并且很徒。
+									</li>
+									<li class="mui-table-view-cell">
+										4.庄家均线与庄家线一直紧贴的。
+									</li>
+									<li class="mui-table-view-cell">
+										5.双向下的有两种，一种是接触，另一种是距离最大。
+									</li>
+									<li class="mui-table-view-cell">
+									   6.选下跌的，不要选择一直上升的。
+									</li>
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+					<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										1.一般情况下，大盘下跌有两种可以选
+									</li>
+									<li class="mui-table-view-cell">
+										2.双向下的有两种，一种是接触，另一种是距离最大。
+									</li>
+									<li class="mui-table-view-cell">
+										3.顺势而为，就是熊市（大盘下跌）要用熊市（大盘上涨）的思维，牛市要用牛市的思维。
+									</li>
+									<li class="mui-table-view-cell">
+										4.均线上穿，距离变大为跌。
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+									  1.市场没有给机会，操作违法了市场的规律。
+									</li>
+									<li class="mui-table-view-cell">
+									  2.交易超出了我所承受的范围的，全仓的。
+									</li>
+									<li class="mui-table-view-cell">
+									  3.分析一定要结合大盘形态。
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item4mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										<font style="color: green;">下绿一直下</font>
+									</li>
+									<li class="mui-table-view-cell">
+										1.均线纠缠（3日均线上穿5日均线次数大于2）,或者出现庄上穿和庄下穿。
+									</li>
+									<li class="mui-table-view-cell">
+										2.均线纠缠近期不会出现拉升资金，庄上下穿可以有，但是拉升资金和主力资金的距离近期不会太大（均线间距不大）。
+									</li>
+									<li class="mui-table-view-cell">
+										3.主力资金基本在底部。
+									</li>
+									<li class="mui-table-view-cell">
+										4.当底部为长下影的时候，顶部靠近60日均线，当底部为大阴的时候，拉升资金非常低小于0.1，阴线有上下影，多为螺旋桨,庄家值大于3－6。
+									</li>
+									<li class="mui-table-view-cell">
+										5.近期不存在庄家撤退。
+									</li>
+									<li class="mui-table-view-cell">
+										6.近个波段弧度不可过长，庄家均线一直粘合的，散户值为100，上影线长的去掉。
+									</li>
+									<li class="mui-table-view-cell">
+										7.阴锤线,光头光脚大阴是跌。
+									</li>
+									
+									<li class="mui-table-view-cell">
+											<font style="color: green;">下绿白V折下</font>
+									</li>
+									<li class="mui-table-view-cell">
+										1.前一天多为阳线， 阴线要高开，当天多为锤子线，或者螺旋桨，有下影线，下影长于上影。
+									</li>
+									<li class="mui-table-view-cell">
+										2.v的第二点低于第一点。
+									</li>
+									<li class="mui-table-view-cell">
+											<font style="color: green;">上长红(一般)</font>
+									</li>
+									<li class="mui-table-view-cell">
+										1.运筹大均,大盘资金多为1。
+									</li>
+									
+									<li class="mui-table-view-cell">
+											<font style="color: green;">上长红红平</font>
+									</li>
+									<li class="mui-table-view-cell">
+										1.运筹小均 ，三乖小，加量，持加 ，有主散距大小出现。
+									</li>
+									<li class="mui-table-view-cell">
+										2.主散距大的交比大于1，VR今高。
+									</li>
+									<li class="mui-table-view-cell">
+										3.主散距小的交比小于1。
+									</li>
+									
+									
+									
+									<li class="mui-table-view-cell">
+											<font style="color: green;">下长红</font>
+									</li>
+									<li class="mui-table-view-cell">
+										1.大盘资金5接近于6，等于6最好。
+									</li>
+								    <li class="mui-table-view-cell">
+										2.3日均线不会超5日均线太多，不会联续超过两天。
+									</li>
+								
+								
+								    <li class="mui-table-view-cell">
+											<font style="color: green;">上长红白下</font>
+									</li>
+									<li class="mui-table-view-cell">
+										1.大盘资金5接小于3大于0。
+									</li>
+									
+									
+									 <li class="mui-table-view-cell">
+											<font style="color: green;">上长红白平</font>
+									</li>
+									<li class="mui-table-view-cell">
+										1.大盘资金5接小于3大于0。
+									</li>
+									
+									
+									
+									
+										
+														
+									<li class="mui-table-view-cell">
+										<font style="color: green;">上交叉后红白上</font>
+									</li>
+									<li class="mui-table-view-cell">
+								      1.在白色结尾处出现白平或者白上。
+									</li>
+									<li class="mui-table-view-cell">
+								      2.交比小于1的洗盘为0，交比大于1的洗盘不为0。
+									</li>
+									
+									
+									
+									<li class="mui-table-view-cell">
+										<font style="color: green;">上交叉后红黄上</font>
+									</li>
+									<li class="mui-table-view-cell">
+								      1.在前一个白色结尾处出现白平。
+									</li>
+									<li class="mui-table-view-cell">
+								      2.交比小于1的洗盘为0，交比大于1的洗盘不为0。
+									</li>
+									
+									
+										
+									<li class="mui-table-view-cell">
+										<font style="color: green;">上交叉后红白双下</font>
+									</li>
+									<li class="mui-table-view-cell">
+								      1.交比小于1，大盘资金5小于等于1。
+									</li>
+									
+									
+												
+										
+									<li class="mui-table-view-cell">
+										<font style="color: green;">上交叉后红绿双下</font>	
+										<sub style="color: red;size:0.01rem;">有模糊</sub>
+									</li>
+									<li class="mui-table-view-cell">
+								      1.坑小均，CCI为负数。
+									</li>
+									
+										
+									<li class="mui-table-view-cell">
+										<font style="color: green;">上交叉后红绿双平</font>	
+			
+									</li>
+									<li class="mui-table-view-cell">
+								      1.运筹小均。
+									</li>
+									
+									
+									
+													
+										
+									<li class="mui-table-view-cell">
+										<font style="color: green;">上绿白黄上</font>	
+										
+									</li>
+									<li class="mui-table-view-cell">
+								      1.坑小均，三乖 小，量饱小于100。
+									</li>
+									<li class="mui-table-view-cell">
+								      2.坑大均，三乖 小，量饱为100。
+									</li>
+									
+									
+												
+									<li class="mui-table-view-cell">
+										<font style="color: green;">上绿白Ｖ绿白平上</font>	
+										
+									</li>
+									<li class="mui-table-view-cell">
+								      1.独立小。
+									</li>
+									
+									
+													
+									<li class="mui-table-view-cell">
+										<font style="color: green;">上绿白Ｖ绿白上交</font>	
+										
+									</li>
+									<li class="mui-table-view-cell">
+								      1.坑小均，运筹大均。
+									</li>
+									
+									
+											<li class="mui-table-view-cell">
+										<font style="color: green;">上绿白Ｖ绿白上 </font>	
+										
+									</li>
+									<li class="mui-table-view-cell">
+								       1.坑小均，运筹大均。
+									</li>
+									
+									
+								
+									
+									
+									
+									
+									
+									
+									
+									
+										<li class="mui-table-view-cell">
+											<font style="color: green;">上绿白V绿下粘一起</font>
+									</li>
+									<li class="mui-table-view-cell">
+										1.运筹小均,VHF小。
+									</li>
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div id="item5mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+											<font style="color: green;">主力分析的原理如下：</font>
+									</li>
+									<li class="mui-table-view-cell">
+										１、惯性原理：处于涨势或者跌势的时候，其趋势一般将延续。
+									</li>
+									<li class="mui-table-view-cell">
+										２、波浪原理：跌有多深则涨也将会有多高；量足则价升。
+									</li>
+									<li class="mui-table-view-cell">
+										３、极静思动：价窄而量缩往往预示着大行情的来临。
+									</li>
+									<li class="mui-table-view-cell">
+										４、物极必反：行情发展到极端状态时将朝着它的反向运行。
+									</li>
+									<li class="mui-table-view-cell">
+										５、一致性：当长期和短期的趋势都一致时其威力最大。
+									</li>
+									<li class="mui-table-view-cell">
+										６、转折交叉：当短期和长期趋势发生矛盾时可能会变盘。
+									</li>
+									<li class="mui-table-view-cell">
+										７、成本原理：当买入的成本小于市场成本时风险较小。
+									</li>
+					                <li class="mui-table-view-cell">
+											<font style="color: green;">主力行为</font>
+									</li>
+									<li class="mui-table-view-cell">
+										１、主力收集：指标在中低位，价量配合好，盘中常有大手笔买单，有间隙放量行为。
+									</li>
+									<li class="mui-table-view-cell">
+										２、主力入场：该股处于盘整或者下跌过程中，突然放出巨量上扬，内盘明显大于外盘，换手积极，主力入场明显。
+									</li>
+									<li class="mui-table-view-cell">
+										３、主力派发：经常高开走低，上冲乏力，均线时常跌破，价量配合差。
+									</li>
+									<li class="mui-table-view-cell">
+										４、主力撤庄：股价暴跌，价量配合极差，外盘远远大于内盘，若成交量放出，属主力撤庄行为。
+									</li>
+									<li class="mui-table-view-cell">
+										５、主力拉升：主力吸足筹码之后，开始振仓洗筹，最明显的特征是升跌无量，并量呈逐波缩小之势，当形态发展到均线粘合、多头排列的时候，主力往往会拉升。
+									</li>
+									<li class="mui-table-view-cell">
+											<font style="color: green;">底部形态分析：</font>
+									</li>
+									<li class="mui-table-view-cell">
+										股票的大幅上扬是从底部开始的，所谓底部当有一个筑底过程，筑底的目的是调整均线或者叫清洗筹码，只有当市场上对该股的抛盘达到了极微的程度，或者因为消息导致市场人士对股市绝望逃命，而又有新生力量介入的时候底部才有可能形成，因此从图表看，一种形态为窄幅缩量，另一种形态则是巨量下跌，底部形成放可产生强大的上升行情。
+									</li>
+								
+								</ul>
+							</div>
+						</div>
+					</div>
+				
+					<div id="item6mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										1、趋向指标：MACD、DMI、DMA、TRX
+									</li>
+									<li class="mui-table-view-cell">
+										2、能量指标：BRAR、CR、VR
+									</li>
+									<li class="mui-table-view-cell">
+										3、量价指标：OBV、ASI、EMV、WAVD
+									</li>
+									<li class="mui-table-view-cell">
+										4、强弱指标：RSI、W&R
+									</li>
+									<li class="mui-table-view-cell">
+										5、停损指标：SAR
+									</li>
+									<li class="mui-table-view-cell">
+										6、超买超卖指标：KDJ、CCI、ROC
+									</li>
+									<li class="mui-table-view-cell">
+										7、压力支撑指标：MIKE、BOLL
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+						<div id="item7mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									 <li class="mui-table-view-cell">
+											<font style="color: green;">买入</font>
+									</li>
+									<li class="mui-table-view-cell">
+										1.要上破均价
+									</li>
+									 <li class="mui-table-view-cell">
+											<font style="color: green;">卖出</font>
+									</li>
+									<li class="mui-table-view-cell">
+										1.要有耐心，下跌只要是不破均价的不卖。
+									</li>
+									<li class="mui-table-view-cell">
+										2.要在拉升的时候卖出。
+									</li>
+									<li class="mui-table-view-cell">
+								       3.持股要有耐心。
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					
+				
+					
+				</div>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.pullToRefresh.js"></script>
+		<script src="js/mui.pullToRefresh.material.js"></script>
+		<script>
+			mui.init();
+			(function($) {
+				//阻尼系数
+				var deceleration = mui.os.ios?0.003:0.0009;
+				$('.mui-scroll-wrapper').scroll({
+					bounce: false,
+					indicators: true, //是否显示滚动条
+					deceleration:deceleration
+				});
+				$.ready(function() {
+					//循环初始化所有下拉刷新，上拉加载。
+					/*$.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function(index, pullRefreshEl) {
+						$(pullRefreshEl).pullToRefresh({
+							down: {
+								callback: function() {
+									var self = this;
+									setTimeout(function() {
+										var ul = self.element.querySelector('.mui-table-view');
+										ul.insertBefore(createFragment(ul, index, 10, true), ul.firstChild);
+										self.endPullDownToRefresh();
+									}, 1000);
+								}
+							},
+							up: {
+								callback: function() {
+									var self = this;
+									setTimeout(function() {
+										var ul = self.element.querySelector('.mui-table-view');
+										ul.appendChild(createFragment(ul, index, 5));
+										self.endPullUpToRefresh();
+									}, 1000);
+								}
+							}
+						});
+					});*/
+					var createFragment = function(ul, index, count, reverse) {
+						var length = ul.querySelectorAll('li').length;
+						var fragment = document.createDocumentFragment();
+						var li;
+						for (var i = 0; i < count; i++) {
+							li = document.createElement('li');
+							li.className = 'mui-table-view-cell';
+							li.innerHTML = '第' + (index + 1) + '个选项卡子项-' + (length + (reverse ? (count - i) : (i + 1)));
+							fragment.appendChild(li);
+						}
+						return fragment;
+					};
+				});
+			})(mui);
+		</script>
+	</body>
+
+</html>

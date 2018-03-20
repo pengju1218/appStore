@@ -1,0 +1,176 @@
+zc
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			
+			.mui-bar~.mui-content .mui-fullscreen {
+				top: 44px;
+				height: auto;
+			}
+			
+			.mui-pull-top-tips {
+				position: absolute;
+				top: -20px;
+				left: 50%;
+				margin-left: -25px;
+				width: 40px;
+				height: 40px;
+				border-radius: 100%;
+				z-index: 1;
+			}
+			
+			.mui-bar~.mui-pull-top-tips {
+				top: 24px;
+			}
+			
+			.mui-pull-top-wrapper {
+				width: 42px;
+				height: 42px;
+				display: block;
+				text-align: center;
+				background-color: #efeff4;
+				border: 1px solid #ddd;
+				border-radius: 25px;
+				background-clip: padding-box;
+				box-shadow: 0 4px 10px #bbb;
+				overflow: hidden;
+			}
+			
+			.mui-pull-top-tips.mui-transitioning {
+				-webkit-transition-duration: 200ms;
+				transition-duration: 200ms;
+			}
+			
+			.mui-pull-top-tips .mui-pull-loading {
+				/*-webkit-backface-visibility: hidden;
+				-webkit-transition-duration: 400ms;
+				transition-duration: 400ms;*/
+				margin: 0;
+			}
+			
+			.mui-pull-top-wrapper .mui-icon,
+			.mui-pull-top-wrapper .mui-spinner {
+				margin-top: 7px;
+			}
+			
+			.mui-pull-top-wrapper .mui-icon.mui-reverse {
+				/*-webkit-transform: rotate(180deg) translateZ(0);*/
+			}
+			
+			.mui-pull-bottom-tips {
+				text-align: center;
+				background-color: #efeff4;
+				font-size: 15px;
+				line-height: 40px;
+				color: #777;
+			}
+			
+			.mui-pull-top-canvas {
+				overflow: hidden;
+				background-color: #fafafa;
+				border-radius: 40px;
+				box-shadow: 0 4px 10px #bbb;
+				width: 40px;
+				height: 40px;
+				margin: 0 auto;
+			}
+			
+			.mui-pull-top-canvas canvas {
+				width: 40px;
+			}
+			
+			.mui-slider-indicator.mui-segmented-control {
+				background-color: #efeff4;
+			}
+			/*@font-face
+			{
+			    font-family: kaiti;
+			    src: url(css/minikaiti.ttf);
+			}*/
+			
+			@font-face {
+				font-family: kaiti;
+				src: url(../../css/mikaiti.ttf);
+			}
+			
+			.mui-table-view-cell {
+				font-size: 0.77rem;
+				font-family: kaiti;
+				padding-top: 0.3rem;
+				padding-bottom: 0.3rem;
+				padding-right: 0.3rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a tapmode onclick="closeWin()" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">下绿一直下</h1>
+		</header>
+
+		<script type="application/javascript">
+			function closeWin() {
+				window.location.href = "../choice5.html";
+				//history.go(-1);
+
+				api.closeWin({});
+			}
+		</script>
+
+		<div class="mui-content">
+
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					1.均线纠缠（3日均线上穿5日均线次数大于2）,或者出现庄上穿和庄下穿。
+				</li>
+				<li class="mui-table-view-cell">
+					2.均线纠缠近期不会出现拉升资金，庄上下穿可以有，但是拉升资金和主力资金的距离近期不会太大（均线间距不大）。
+				</li>
+				<li class="mui-table-view-cell">
+					3.主力资金基本在底部。
+				</li>
+				<li class="mui-table-view-cell">
+					4.当底部为长下影的时候，顶部靠近60日均线，当底部为大阴的时候，拉升资金非常低小于0.1，阴线有上下影，多为螺旋桨,庄家值大于3－6。
+				</li>
+				<li class="mui-table-view-cell">
+					5.近期不存在庄家撤退。
+				</li>
+				<li class="mui-table-view-cell">
+					6.近个波段弧度不可过长，庄家均线一直粘合的，散户值为100，上影线长的去掉。
+				</li>
+				<li class="mui-table-view-cell">
+					7.阴锤线,光头光脚大阴是跌。
+				</li>
+
+				<li class="mui-table-view-cell">
+					<font style="color: green;">下绿白V折下</font>
+				</li>
+				<li class="mui-table-view-cell">
+					1.前一天多为阳线， 阴线要高开，当天多为锤子线，或者螺旋桨，有下影线，下影长于上影。
+				</li>
+				<li class="mui-table-view-cell">
+					2.v的第二点低于第一点。
+				</li>
+
+			</ul>
+
+		</div>
+		<script src="../js/mui.min.js"></script>
+
+	</body>
+
+</html>

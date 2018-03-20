@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://www.17sucai.com/preview/193248/2016-05-26/easyTab/index.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link rel="stylesheet" type="text/css" href="../css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/base.css">
+
+ 	   <link rel="stylesheet" type="text/css" href="css/aui.css" />
+    <script type="text/javascript" src="../js/api.js"></script>
+<style type="text/css">
+	
+	@font-face
+{
+font-family: myFirstFont;
+src: url('css/Kt_GB2312.ttf'); /* IE9+ */
+}
+
+	
+	
+	
+	
+ * {
+  padding:0;
+  margin:0;
+ }
+ body {
+  font-family:verdana;
+  font-size:12px;
+ }
+ 
+ .content h1 {
+  font-family:'微软雅黑';
+  font-size:18px;
+  padding-bottom:5px;
+ }
+ table {
+  width:100%;
+ }
+ th, td {
+  padding:6px 0;
+  text-align:center;
+  font-size:0.7rem;
+  font-family: myFirstFont;
+  color:rgba(248,248,255,1);
+ }
+ th {
+  background-color:#007D28;
+  color:#ffffff;
+ }
+ 
+ tr {
+  background-color:#A020F0;
+ }
+ 
+ .odd {
+  background-color:#FFF3EE;
+ }
+ 
+ .highlight {
+  background-color:#E0E0E0;
+}
+
+
+ .mytext{
+  	text-align:left;
+  }
+
+</style>
+
+</head>
+<body  style="height: 100%;" class="full-page">
+	<header class="aui-bar aui-bar-nav" id="aui-header">
+        <a class="aui-btn aui-pull-left" tapmode onclick="closeWin()">
+            <span class="aui-iconfont aui-icon-left"></span>
+        </a>
+        <div class="aui-title">k线类型 </div>
+    </header>
+    
+    
+    
+    
+    <script type="text/javascript">
+    apiready = function(){
+        api.parseTapmode();
+        var header = $api.byId('aui-header');
+        $api.fixStatusBar(header);
+        var headerPos = $api.offset(header);
+        var body_h = $api.offset($api.dom('body')).h;
+        api.openFrame({
+            name: 'card_list_frm',
+            url: 'javascript:history.go(-1)',
+            
+            
+            bounces: true,
+            rect: {
+                x: 0,
+                y: headerPos.h,
+                w: 'auto',
+                h: 'auto'
+            }
+        })
+
+
+    };
+    function closeWin(){
+    	window.location.href="../index.html";
+    	//history.go(-1);
+
+        api.closeWin({
+        });
+    }
+</script>
+	
+	
+	
+	
+	
+	
+<div class="content">
+
+
+
+ <table summary="user infomation table">
+  <thead>
+   <tr>
+    <th>类型</th>
+    <th>特点</th>
+   
+   </tr>
+  </thead>
+  <tbody>
+  
+  
+   <tr>
+    <td rowspan="3" width="8%">下平走</td>
+    <td class="mytext">1.三日均线与五日均线接触，三日均线平走，程三角形。</td>
+   </tr>
+    <tr><td  class="mytext">2.看透主力的红线是缓缓向上的。</td></tr> 
+    <tr><td class="mytext">3.趋势线变化不会太大，缓缓向上。</td></tr> 
+
+      
+   <tr>
+    <td rowspan="2" width="4%">红右十字星</td>
+    <td class="mytext">1.多发生在上涨的图中。</td>
+   </tr>
+   <tr><td  class="mytext">2.看透主力线上涨放缓。</td></tr> 
+     
+      
+      
+   <tr>
+    <td rowspan="2" width="4%">长走红上</td>
+    <td class="mytext">1.多发生在上涨的图中，主力线大弯弧向上。</td>
+   </tr>
+   <tr><td  class="mytext">2.前期的主力资金没有高位，并且当天的资金红线不会太高</td></tr> 
+     
+      
+      
+   <tr>
+    <td rowspan="2" width="4%">均线一直交叉</td>
+    <td class="mytext">1.均线一直在一起，前期的主力资金几乎看不到，并且当天的资金红线有也会不明显</td>
+   </tr>
+   <tr><td  class="mytext">2.当主力要拉升前会有一种类似于揉搓线的k线形态。</td></tr> 
+     
+           
+   <tr>
+    <td rowspan="4" width="4%">底部中小阴长下影</td>
+    <td class="mytext">1.前期的拉升资金没有高位。</td>
+   </tr>
+   <tr><td  class="mytext">2.主力资金与庄家线有一个放缓。</td></tr> 
+   <tr><td  class="mytext">3.两均线无交叉，可以挨着。</td></tr>  
+   <tr><td  class="mytext">4.渐变缓，不是突然变缓。</td></tr>  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  </tbody>
+ </table>
+</div>
+    
+    
+    
+    
+    
+    
+</body>
+</html>
+

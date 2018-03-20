@@ -1,0 +1,186 @@
+zc
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			
+			.mui-bar~.mui-content .mui-fullscreen {
+				top: 44px;
+				height: auto;
+			}
+			
+			.mui-pull-top-tips {
+				position: absolute;
+				top: -20px;
+				left: 50%;
+				margin-left: -25px;
+				width: 40px;
+				height: 40px;
+				border-radius: 100%;
+				z-index: 1;
+			}
+			
+			.mui-bar~.mui-pull-top-tips {
+				top: 24px;
+			}
+			
+			.mui-pull-top-wrapper {
+				width: 42px;
+				height: 42px;
+				display: block;
+				text-align: center;
+				background-color: #efeff4;
+				border: 1px solid #ddd;
+				border-radius: 25px;
+				background-clip: padding-box;
+				box-shadow: 0 4px 10px #bbb;
+				overflow: hidden;
+			}
+			
+			.mui-pull-top-tips.mui-transitioning {
+				-webkit-transition-duration: 200ms;
+				transition-duration: 200ms;
+			}
+			
+			.mui-pull-top-tips .mui-pull-loading {
+				/*-webkit-backface-visibility: hidden;
+				-webkit-transition-duration: 400ms;
+				transition-duration: 400ms;*/
+				margin: 0;
+			}
+			
+			.mui-pull-top-wrapper .mui-icon,
+			.mui-pull-top-wrapper .mui-spinner {
+				margin-top: 7px;
+			}
+			
+			.mui-pull-top-wrapper .mui-icon.mui-reverse {
+				/*-webkit-transform: rotate(180deg) translateZ(0);*/
+			}
+			
+			.mui-pull-bottom-tips {
+				text-align: center;
+				background-color: #efeff4;
+				font-size: 15px;
+				line-height: 40px;
+				color: #777;
+			}
+			
+			.mui-pull-top-canvas {
+				overflow: hidden;
+				background-color: #fafafa;
+				border-radius: 40px;
+				box-shadow: 0 4px 10px #bbb;
+				width: 40px;
+				height: 40px;
+				margin: 0 auto;
+			}
+			
+			.mui-pull-top-canvas canvas {
+				width: 40px;
+			}
+			
+			.mui-slider-indicator.mui-segmented-control {
+				background-color: #efeff4;
+			}
+			/*@font-face
+			{
+			    font-family: kaiti;
+			    src: url(css/minikaiti.ttf);
+			}*/
+			
+			@font-face {
+				font-family: kaiti;
+				src: url(../../css/mikaiti.ttf);
+			}
+			
+			.mui-table-view-cell {
+				font-size: 0.77rem;
+				font-family: kaiti;
+				padding-top: 0.3rem;
+				padding-bottom: 0.3rem;
+				padding-right: 0.3rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a tapmode onclick="closeWin()" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">上绿白上</h1>
+		</header>
+
+		<script type="application/javascript">
+			function closeWin() {
+				window.location.href = "../choice5.html";
+				//history.go(-1);
+
+				api.closeWin({});
+			}
+		</script>
+
+		<div class="mui-content">
+
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					1.内能大，波段大，神拐小，独立大，坑小均，运筹大均，三乖大，VR小，加量，持加。CCI>0(万向德农)<sup style="color:#4B0082;font-family: kaiti;">唯一</sup>
+				</li>
+				<li class="mui-table-view-cell">
+					2.内能大，波段大，神拐大，独立大，坑小均，运筹大均，三乖大，VR大，加量，持加。MACD
+					<5。(华鑫股份 联明股份) </li>
+						<li class="mui-table-view-cell">
+							3.内能大，波段大，神拐小，独立大，坑小均，运筹大均，三乖大，VR大，加量，持加。CYS>0，CCI>0，二峰>0，大盘资金为0(同有科技)
+						</li>
+						<li class="mui-table-view-cell">
+							4.内能大，波段大，神拐大，独立大，坑小均，运筹大均，三乖大，VR小，加量，持减。(未名医药)
+						</li>
+						<li class="mui-table-view-cell">
+							5.内能大，波段大，神拐大，独立小，坑大均，运筹大均，三乖大，VR大，加量，持加。CYS>0，CCI
+							<0，二峰>0，大盘资金不为0(二六三)
+						</li>
+						<li class="mui-table-view-cell">
+							6.内能大，波段大，神拐小，独立大，坑大均，运筹大均，三乖大，VR大，加量，持加。CYS>0，CCI>0(思创医惠)
+						</li>
+						<li class="mui-table-view-cell">
+							7.内能大，波段大，神拐大，独立大，坑大均，运筹大均，三乖大，VR大，加量，持加。(万讯自控 千山药机)
+						</li>
+						<li class="mui-table-view-cell">
+							8.内能大，波段大，神拐小，独立小，坑大均，运筹大均，三乖大，VR大，加量，持加。CYS>0，CCI
+							<0，二峰>0，量大。(黑猫股份)
+						</li>
+						<li class="mui-table-view-cell">
+							9.内能大，波段大，神拐大，独立小，坑小均，运筹小均，三乖大，VR大，加量，持减。(永和智控)<sup style="color:#4B0082;font-family: kaiti;">唯一</sup>
+						</li>
+						<li class="mui-table-view-cell">
+							10.内能大，波段大，神拐小，独立小，坑小均，运筹大均，三乖大，VR大，加量，持加。CYS>0，CCI
+							<0，二峰<0(中兵红箭) </li>
+								<li class="mui-table-view-cell">
+									11.内能大，波段大，神拐大，独立大，坑小均，运筹大均，三乖大，VR大，减量，持加。(金桥信息)
+								</li>
+								<li class="mui-table-view-cell">
+									12.内能大，波段大，神拐大，独立小，坑大均，运筹大均，三乖大，VR小，加量，持减。 (民生控股)
+								</li>
+								<li class="mui-table-view-cell">
+									13.总结明显的地方：全部大的没有；波段小的没有；运筹小均有唯一的；VR小，加量，持减的内能大，波段大，神拐大；
+								</li>
+
+			</ul>
+
+		</div>
+		<script src="../js/mui.min.js"></script>
+
+	</body>
+
+</html>

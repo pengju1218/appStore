@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://www.17sucai.com/preview/193248/2016-05-26/easyTab/index.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link rel="stylesheet" type="text/css" href="css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <link rel="stylesheet" href="css/style.css">
+	   <link rel="stylesheet" href="css/base.css">
+	   <link rel="stylesheet" type="text/css" href="css/aui.css" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/api.js"></script>
+    <script src="js/jquery.easyui.min.js"></script>
+    <script src="js/easyui-lang-zh_CN.js"></script>
+
+</head>
+<body  style="height: 100%;" class="full-page">
+<header class="aui-bar aui-bar-nav" id="aui-header">
+        <a class="aui-btn aui-pull-left" tapmode onclick="closeWin()">
+            <span class="aui-iconfont aui-icon-left"></span>
+        </a>
+        <div class="aui-title">k线图形</div>
+    </header>
+    
+    
+    
+    
+    <script type="text/javascript">
+    apiready = function(){
+        api.parseTapmode();
+        var header = $api.byId('aui-header');
+        $api.fixStatusBar(header);
+        var headerPos = $api.offset(header);
+        var body_h = $api.offset($api.dom('body')).h;
+        api.openFrame({
+            name: 'card_list_frm',
+            url: 'javascript:history.go(-1)',
+            
+            
+            bounces: true,
+            rect: {
+                x: 0,
+                y: headerPos.h,
+                w: 'auto',
+                h: 'auto'
+            }
+        })
+
+
+    };
+    function closeWin(){
+    	history.go(-1);
+
+        api.closeWin({
+        });
+    }
+</script>
+<div class="queryBox"  style="height: 100%;">
+
+    <!-- 列表-->
+    <div class="queryList"  style="height: 100%;">
+        <div class="panel datagrid easyui-fluid"  style="height: 100%;width: 100%;"><div class="datagrid-wrap panel-body panel-body-noheader" title=""
+		style="width: 100%; height: 100%;">
+		<div class="datagrid-view" style="width: 100%; height: 100%;">
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		<table class="easyui-datagrid datagrid-f" cellspacing="0" cellpadding="0" 
+		width="100%" height="auto" data-options="
+                singleSelect: true,
+                collapsible: true,
+                fitColumns: true,
+                url: &#39;&#39;,
+                method: &#39;get&#39;,
+                onLoadSuccess: function(){
+                    $(this).datagrid(&#39;freezeRow&#39;);
+                }" style="display: none;">
+            <thead data-options="frozen:true">
+            <tr>
+                <th data-options="frozen:true,field:&#39;operate&#39;">序号</th>
+                <th data-options="frozen:true,field:&#39;name&#39;">名称</th>
+              
+            </tr>
+            </thead>
+            <thead>
+            <tr class="listTit tabTh">
+                <th data-options="frozen:true,field:&#39;file&#39;"><div style="width:6rem ; text-align: center;">图形</div></th>
+               <th data-options="frozen:true,field:&#39;number&#39;">说明</th>
+                 <!--<th data-options="frozen:true,field:&#39;tel&#39;">固定电话</th>
+                <th data-options="frozen:true,field:&#39;mobile&#39;">手机号码</th>
+                <th data-options="frozen:true,field:&#39;people&#39;">联系人电话</th>
+                <th data-options="frozen:true,field:&#39;date&#39;">预约日期</th>
+                <th data-options="frozen:true,field:&#39;sftx&#39;">随访提醒</th>
+                <th data-options="frozen:true,field:&#39;way&#39;">随访方式</th>
+                <th data-options="frozen:true,field:&#39;mcdate&#39;">末次随访日期</th>
+                <th data-options="frozen:true,field:&#39;mociblood&#39;">末次随访血糖</th>
+                <th data-options="frozen:true,field:&#39;manager&#39;">业务管理机构</th>
+                <th data-options="frozen:true,field:&#39;bgdate&#39;">报告日期</th>
+                <th data-options="frozen:true,field:&#39;bgdw&#39;">报告单位</th>
+                <th data-options="frozen:true,field:&#39;bgdoctor&#39;">报告医生</th>
+                <th data-options="frozen:true,field:&#39;bgaddress&#39;">报告地址</th>-->
+            </tr>
+            </thead>
+
+            <div class="panel" style="display: block;"><tbody id="content" class="easyui-panel panel-body panel-body-noheader" style="width: 58px; height: 198px;" data-options="href:&#39;&#39;" title="">
+            <tr class="listTr">
+                <td>1</td>
+                <td>早晨之星</td>
+                <td><img src="img/zczx.png" width="175" height="55" alt="" />  </td>
+                <td>意义：早晨之星的K线形式一般出现在下降趋势的末端,是一个较强烈的趋势反转信号,谨慎的投资者可以结合成交量和其它指标分析,得出相应的投资参考。同时有它的名称也可知这个形态预示着价格的上涨。三根K线在心理上构成一个完整的转化过程：看跌心理,多空平衡,看涨心理,故此组合形态转向和止跌横盘的有效性较高。因此，对于早晨之星的个股,大家应该逢低分批介入,不要犹豫不决,免得日后踏空。
+</td>
+                <td>身份证号身份证号身份证号身份证号身份证号身份证号身份证号身份证号</td>
+                <td>310110199001010123</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>北京市北京市北京市北京市北京市北京市北京市北京市北京市北京市北京市</td>
+            </tr>
+            <tr class="listTr">
+                <td>2</td>
+                <td>双十字星</td>
+                <td><img src="img/sxzx.png" width="175" height="55" alt="" /></td>
+                <td>K线形态如果在下跌途中连续出现两个十字星则意味着企稳，后市将要回升；如果在上升过程中出现两个十字星则表示阶段性顶部形成，股价将会回落调整。</td>
+                <td>身份证号</td>
+                <td>310110199001010123</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="listTr">
+                <td>3</td>
+                <td>三连阴</td>
+                <td><img src="img/sy1.png" width="175" height="55" alt="" /></td>
+                <td>出现在下降未期，三个k线的实体不会太大,并且第三根的k线的下影较小。</td>
+                <td>身份证号</td>
+                <td>310110199001010123</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr> <tr class="listTr">
+                <td>4</td>
+                <td>揉搓线</td>
+                <td><img src="img/rcx1.png" width="175" height="55" alt="" /></td>
+                <td>揉搓线多出现在上涨的势头中，基本图形特征是由一正一反两个Ｔ字形Ｋ线组成。在上涨中途出现，继续看涨；在顶部出现，是见顶信号。</td>
+               
+            </tr>
+             </tr> 
+            <tr class="listTr">
+                <td>5</td>
+                <td>跳空阴倒锤子</td>
+                <td><img src="img/tkydc1.png" width="175" height="55" alt="" /></td>
+                <td>跳空高开，阴线实体短稍短，有长长的上影线，易涨停</td>
+               
+            </tr>
+            
+            <tr class="listTr">
+                <td>6</td>
+                <td>阳线右肩十字星</td>
+                <td><img src="img/yyszx1.png" width="175" height="55" alt="" /></td>
+                <td>①这种组合如果股价处于相对底部，属于典型上攻形态，长十字星为上攻中继，起到洗盘作用，应及时介入；②这种组合如处于主升段中，充当洗盘作用，喘一口气，积聚能量，再发力上攻，此时应及时介入；③这种组合如出现在涨幅巨大的高价区，是见顶信号，应及时出局。</td>
+               
+            </tr>
+            
+            
+            <tr class="listTr">
+                <td>7</td>
+                <td>小阳长上影短影中阴线</td>
+                <td><img src="img/csydyx1.png" width="175" height="55" alt="" /></td>
+                <td>这种情况上拉很被动，于是下拉中阴线，上多数人交出筹码，中阴收盘价和倒数第三日的收盘相近。</td>
+               
+            </tr>
+            
+             <tr  class="listTr">
+                <td >7</td>
+                <td>双阳走阴</td>
+                <td><img src="img/syzy1.png" width="175" height="55" alt="" /></td>
+                <td>先两阳线显示上攻，而后走阴。</td>
+               
+            </tr>
+            </tbody></div>
+            
+        </table><style type="text/css" easyui="true">
+.datagrid-cell-c1-operate{width:auto}
+.datagrid-cell-c1-name{width:auto}
+.datagrid-cell-c1-sex{width:auto}
+.datagrid-cell-c1-birth{width:auto}
+.datagrid-cell-c1-file{width:auto}
+.datagrid-cell-c1-number{width:auto}
+.datagrid-cell-c1-tel{width:auto}
+.datagrid-cell-c1-mobile{width:auto}
+.datagrid-cell-c1-people{width:auto}
+.datagrid-cell-c1-date{width:auto}
+.datagrid-cell-c1-sftx{width:auto}
+.datagrid-cell-c1-way{width:auto}
+.datagrid-cell-c1-mcdate{width:auto}
+.datagrid-cell-c1-mociblood{width:auto}
+.datagrid-cell-c1-manager{width:auto}
+.datagrid-cell-c1-bgdate{width:auto}
+.datagrid-cell-c1-bgdw{width:auto}
+.datagrid-cell-c1-bgdoctor{width:auto}
+.datagrid-cell-c1-bgaddress{width:auto}
+</style></div></div></div>
+    </div>
+</div>
+
+
