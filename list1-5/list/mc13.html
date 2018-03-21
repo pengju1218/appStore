@@ -1,4 +1,4 @@
-zc
+﻿zc
 <!DOCTYPE html>
 <html>
 
@@ -113,6 +113,10 @@ zc
 				padding-bottom: 0.3rem;
 				padding-right: 0.3rem;
 			}
+			
+			mark {
+				font: red;
+			}
 		</style>
 	</head>
 
@@ -150,39 +154,39 @@ zc
 					5.内能大，波段小，神拐大，独立大，坑大均，运筹小均，三乖小，VR大，减量，持加。(昆药集团)
 				</li>
 				<li class="mui-table-view-cell">
-					6.内能大，波段小，神拐大，独立大，坑大均，运筹大均，三乖小，VR大，加量，持加。(数字政通 雪迪龙 冀东水泥  津膜科技 和佳股份 盛洋科技 中材节能)
+					6.内能大，波段小，神拐大，独立大，坑大均，运筹大均，三乖小，VR大，加量，持加。(数字政通 雪迪龙 冀东水泥 津膜科技 和佳股份 盛洋科技 中材节能)
 				</li>
 				<li class="mui-table-view-cell">
 					7.内能大，波段小，神拐大，独立大，坑大均，运筹大均，三乖小，VR小，减量，持减。(渤海股份)
 				</li>
-                 <li class="mui-table-view-cell">
+				<li class="mui-table-view-cell">
 					8.内能大，波段小，神拐大，独立大，坑大均，运筹大均，三乖小，VR小，减量，持加。(韩建河山)
 				</li>
-				 <li class="mui-table-view-cell">
+				<li class="mui-table-view-cell">
 					9.内能大，波段小，神拐大，独立大，坑大均，运筹大均，三乖小，VR大，减量，持加。(盛和资源 中环装备 京汉股份 长江投资)
 				</li>
-				 <li class="mui-table-view-cell">
+				<li class="mui-table-view-cell">
 					10.内能小，波段小，神拐大，独立大，坑大均，运筹小均，三乖小，VR小，加量，持减。(万马股份)
 				</li>
-				 <li class="mui-table-view-cell">
+				<li class="mui-table-view-cell">
 					11.内能大，波段小，神拐大，独立大，坑大均，运筹大均，三乖小，VR小，加量，持减。(思创医惠 荣之联)
 				</li>
-				 <li class="mui-table-view-cell">
+				<li class="mui-table-view-cell">
 					12.内能大，波段小，神拐小，独立小，坑大均，运筹大均，三乖小，VR小，加量，持加。(西藏旅游)
 				</li>
-				 <li class="mui-table-view-cell">
+				<li class="mui-table-view-cell">
 					13.内能小，波段小，神拐小，独立大，坑小均，运筹大均，三乖小，VR小，加量，持加。(鹏翎股份)
 				</li>
-				 <li class="mui-table-view-cell">
+				<li class="mui-table-view-cell">
 					14.内能小，波段小，神拐小，独立小，坑小均，运筹大均，三乖小，VR大，减量，持加。(雅化集团)
 				</li>
-				 <li class="mui-table-view-cell">
+				<li class="mui-table-view-cell">
 					15.内能小，波段小，神拐小，独立小，坑小均，运筹大均，三乖小，VR小，加量，持加。(华伍股份)
 				</li>
-				 <li class="mui-table-view-cell">
+				<li class="mui-table-view-cell">
 					16.内能小，波段小，神拐小，独立大，坑大均，运筹小均，三乖小，VR大，加量，持加。(新宁物流)
 				</li>
-				 <li class="mui-table-view-cell">
+				<li class="mui-table-view-cell">
 					17.内能大，波段小，神拐大，独立大，坑大均，运筹小均，三乖大，VR大，加量，持加。(秋林集团)
 				</li>
 				<li class="mui-table-view-cell">
@@ -197,28 +201,62 @@ zc
 				<li class="mui-table-view-cell">
 					21.内能小，波段小，神拐大，独立大，坑大均，运筹小均，三乖小，VR大，加量，持加。(乾景园林)
 				</li>
-			
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				
 
 			</ul>
 
 		</div>
 		<script src="../js/mui.min.js"></script>
 
+		<script type="text/javascript">
+			function keyLight(cls, key, bgColor) {
+				var oDiv = document.getElementsByClassName(cls);
+				var chi = oDiv[0].childNodes;
+				for(var i = 0; i < chi.length; i++) {
+					var type = chi[i].nodeName;
+					if('LI' === type) {
+						var sText = chi[i].innerHTML,
+							bgColor = bgColor || "orange",
+							sKey = "<span style='color: " + bgColor + ";'>" + key + "</span>",
+							num = -1,
+							rStr = new RegExp(key, "g"),
+							rHtml = new RegExp("\<.*?\>", "ig"), //匹配html元素
+							aHtml = sText.match(rHtml); //存放html元素的数组
+						sText = sText.replace(rHtml, '{~}'); //替换html标签
+						sText = sText.replace(rStr, sKey); //替换key
+						sText = sText.replace(/{~}/g, function() { //恢复html标签
+							num++;
+							return aHtml[num];
+						});
+						chi[i].innerHTML = sText;
+					}
+				}
+			}
+
+			function keyLightList(cls, lis, color) {
+				for(var i = 0; i < lis.length; i++) {
+					keyLight(cls, lis[i], color);
+				}
+
+			}
+
+			var textOne1 = ['内能大','波段大', '神拐大', '独立大', '坑大均', '运筹大均', '三乖大'];
+			var textOne2 = ['内能小','波段小', '神拐小', '独立小', '坑小均', '运筹小均', '三乖小'];
+			keyLightList('mui-table-view', textOne1, 'red');
+	        keyLightList('mui-table-view', textOne2, 'green');
+	        keyLight('mui-table-view', 'VR大，加量，持加', '#FF1493');
+	        keyLight('mui-table-view', 'VR小，加量，持加', '#CD2626');
+	        keyLight('mui-table-view', 'VR大，加量，持减', '#A020F0');
+	        keyLight('mui-table-view', 'VR小，加量，持减', '#836FFF');
+	        
+	        
+	        keyLight('mui-table-view', 'VR大，减量，持加', '#76EE00');
+	        keyLight('mui-table-view', 'VR小，减量，持加', '#FFD700');
+	        
+	        
+	        
+	        
+	      
+		</script>
 	</body>
 
 </html>
