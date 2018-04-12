@@ -79,26 +79,39 @@
 }
 
 @font-face {
-	font-family: kaiti;
-	src: url(../../fonts/mikaiti.ttf);
+	font-family: 'kaiti';
+	src: url('../../fonts/mikaiti.ttf') format('truetype');
+
+	unicode-range: u+0x4e00-0x9fa5;
 }
 
 @font-face {
-	font-family: sz;
-	src: url('../../fonts/ae_Sindibad.ttf')
-}
-m {
-	font-family: sz;
+	font-family: 'sz';
+	src: url('../../fonts/ae_Sindibad.ttf') format('truetype');
+	unicode-range: u+0x30-0x39;
 }
 
 .mui-table-view-cell {
-	font-size: 0.9rem;
+	font-size: 0.78rem;
 	font-family: kaiti;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	padding-right: 0.3rem;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+	line-height: auto;
 }
 
+html,
+body {
+	
+	background-color: #efeff4;
+}
+
+
+.mui-table-view-cell k{
+	color: green;
+}
+.mui-table-view-cell m{
+	font-family: sz;
+}
 
 .mui-title {
 	font-family: kaiti;

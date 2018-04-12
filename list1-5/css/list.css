@@ -1,8 +1,3 @@
-@font-face {
-	font-family: kaiti;
-	src: url(../../css/mikaiti.ttf);
-}
-
 .mui-table-view-cell {
 	font-size: 0.77rem;
 	font-family: kaiti;

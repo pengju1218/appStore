@@ -23,3 +23,27 @@
 	font-size: 14px;
 	color: #8f8f94;
 }
+
+@font-face {
+	font-family: kaiti;
+	src: url(../fonts/mikaiti.ttf);
+
+}
+
+
+@font-face {
+	font-family: sz;
+	src: url('../fonts/ae_Sindibad.ttf')
+}
+m {
+	font-family: sz;
+}
+
+
+.mui-table-view-cell {
+	font-family: kaiti;
+	font-size: 0.9rem;
+	height: auto;
+	padding-top: 0.64rem;
+	padding-bottom: 0.64rem;
+}

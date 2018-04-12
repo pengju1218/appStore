@@ -11,14 +11,11 @@ zc
 
 		<link rel="stylesheet" href="css/mui.min.css">
 		<style>
-			html,
-			body {
-				background-color: #efeff4;
-			}
 			.mui-bar~.mui-content .mui-fullscreen {
 				top: 44px;
 				height: auto;
 			}
+			
 			.mui-pull-top-tips {
 				position: absolute;
 				top: -20px;
@@ -29,9 +26,11 @@ zc
 				border-radius: 100%;
 				z-index: 1;
 			}
+			
 			.mui-bar~.mui-pull-top-tips {
 				top: 24px;
 			}
+			
 			.mui-pull-top-wrapper {
 				width: 42px;
 				height: 42px;
@@ -44,23 +43,28 @@ zc
 				box-shadow: 0 4px 10px #bbb;
 				overflow: hidden;
 			}
+			
 			.mui-pull-top-tips.mui-transitioning {
 				-webkit-transition-duration: 200ms;
 				transition-duration: 200ms;
 			}
+			
 			.mui-pull-top-tips .mui-pull-loading {
 				/*-webkit-backface-visibility: hidden;
 				-webkit-transition-duration: 400ms;
 				transition-duration: 400ms;*/
 				margin: 0;
 			}
+			
 			.mui-pull-top-wrapper .mui-icon,
 			.mui-pull-top-wrapper .mui-spinner {
 				margin-top: 7px;
 			}
+			
 			.mui-pull-top-wrapper .mui-icon.mui-reverse {
 				/*-webkit-transform: rotate(180deg) translateZ(0);*/
 			}
+			
 			.mui-pull-bottom-tips {
 				text-align: center;
 				background-color: #efeff4;
@@ -68,6 +72,7 @@ zc
 				line-height: 40px;
 				color: #777;
 			}
+			
 			.mui-pull-top-canvas {
 				overflow: hidden;
 				background-color: #fafafa;
@@ -77,19 +82,33 @@ zc
 				height: 40px;
 				margin: 0 auto;
 			}
+			
 			.mui-pull-top-canvas canvas {
 				width: 40px;
 			}
+			
 			.mui-slider-indicator.mui-segmented-control {
 				background-color: #efeff4;
 			}
 			
-			/*@font-face
-			{
-			    font-family: kaiti;
-			    src: url(css/minikaiti.ttf);
-			}*/
-
+			@font-face {
+				font-family: kaiti;
+				src: url(../fonts/mikaiti.ttf);
+			}
+			
+			@font-face {
+				font-family: sz;
+				src: url(../fonts/ae_Sindibad.ttf);
+			}
+			
+			html,
+			body {
+				font-family: kaiti;
+				background-color: #efeff4;
+			}
+		    m{
+		    		font-family: sz;
+		    }
 		</style>
 	</head>
 
@@ -98,30 +117,22 @@ zc
 			<a tapmode onclick="closeWin()" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 			<h1 class="mui-title">不选的 k线 </h1>
 		</header>
-		
-		
-		
-		<script type="application/javascript">
-			
-			function closeWin(){
-    	window.location.href="../index.html";
-    	//history.go(-1);
 
-        api.closeWin({
-        });
-    }
-			
-			
+		<script type="application/javascript">
+			function closeWin() {
+				window.location.href = "../index.html";
+				//history.go(-1);
+
+				api.closeWin({});
+			}
 		</script>
-		
-		
-		
+
 		<div class="mui-content">
 			<div id="slider" class="mui-slider mui-fullscreen">
 				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
 					<div class="mui-scroll">
 						<a class="mui-control-item mui-active" href="#item1mobile">
-							选股1
+							选股
 						</a>
 						<a class="mui-control-item" href="#item2mobile">
 							规律
@@ -129,7 +140,7 @@ zc
 						<a class="mui-control-item" href="#item3mobile">
 							风险
 						</a>
-						
+
 						<a class="mui-control-item" href="#item4mobile">
 							主力
 						</a>
@@ -142,7 +153,7 @@ zc
 						<a class="mui-control-item" href="#item7mobile">
 							量价
 						</a>
-						
+
 					</div>
 				</div>
 				<div class="mui-slider-group">
@@ -151,7 +162,7 @@ zc
 							<div class="mui-scroll">
 								<ul class="mui-table-view">
 									<li class="mui-table-view-cell">
-										1.前面的拉升资金有高位的。
+									    1.前面的拉升资金有高位的。
 									</li>
 									<li class="mui-table-view-cell">
 										2.均线或者趋势线一直正常向下的，即使主力资金一直上升。
@@ -166,16 +177,15 @@ zc
 										5.双向下的有两种，一种是接触，另一种是距离最大。
 									</li>
 									<li class="mui-table-view-cell">
-									   6.选下跌的，不要选择一直上升的。
+										6.选下跌的，不要选择一直上升的。
 									</li>
-									
-									
+
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div id="item2mobile" class="mui-slider-item mui-control-content">
-					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll-wrapper">
 							<div class="mui-scroll">
 								<ul class="mui-table-view">
 									<li class="mui-table-view-cell">
@@ -190,7 +200,7 @@ zc
 									<li class="mui-table-view-cell">
 										4.均线上穿，距离变大为跌。
 									</li>
-									
+
 								</ul>
 							</div>
 						</div>
@@ -200,27 +210,26 @@ zc
 							<div class="mui-scroll">
 								<ul class="mui-table-view">
 									<li class="mui-table-view-cell">
-									  1.市场没有给机会，操作违法了市场的规律。
+										1.市场没有给机会，操作违法了市场的规律。
 									</li>
 									<li class="mui-table-view-cell">
-									  2.交易超出了我所承受的范围的，全仓的。
+										2.交易超出了我所承受的范围的，全仓的。
 									</li>
 									<li class="mui-table-view-cell">
-									  3.分析一定要结合大盘形态。
+										3.分析一定要结合大盘形态。
 									</li>
-									
+
 								</ul>
 							</div>
 						</div>
 					</div>
-					
-					
+
 					<div id="item4mobile" class="mui-slider-item mui-control-content">
 						<div class="mui-scroll-wrapper">
 							<div class="mui-scroll">
 								<ul class="mui-table-view">
 									<li class="mui-table-view-cell">
-											<font style="color: green;">主力分析的原理如下：</font>
+										<font style="color: green;">主力分析的原理如下：</font>
 									</li>
 									<li class="mui-table-view-cell">
 										１、惯性原理：处于涨势或者跌势的时候，其趋势一般将延续。
@@ -243,8 +252,8 @@ zc
 									<li class="mui-table-view-cell">
 										７、成本原理：当买入的成本小于市场成本时风险较小。
 									</li>
-					                <li class="mui-table-view-cell">
-											<font style="color: green;">主力行为</font>
+									<li class="mui-table-view-cell">
+										<font style="color: green;">主力行为</font>
 									</li>
 									<li class="mui-table-view-cell">
 										１、主力收集：指标在中低位，价量配合好，盘中常有大手笔买单，有间隙放量行为。
@@ -262,17 +271,17 @@ zc
 										５、主力拉升：主力吸足筹码之后，开始振仓洗筹，最明显的特征是升跌无量，并量呈逐波缩小之势，当形态发展到均线粘合、多头排列的时候，主力往往会拉升。
 									</li>
 									<li class="mui-table-view-cell">
-											<font style="color: green;">底部形态分析：</font>
+										<font style="color: green;">底部形态分析：</font>
 									</li>
 									<li class="mui-table-view-cell">
 										股票的大幅上扬是从底部开始的，所谓底部当有一个筑底过程，筑底的目的是调整均线或者叫清洗筹码，只有当市场上对该股的抛盘达到了极微的程度，或者因为消息导致市场人士对股市绝望逃命，而又有新生力量介入的时候底部才有可能形成，因此从图表看，一种形态为窄幅缩量，另一种形态则是巨量下跌，底部形成放可产生强大的上升行情。
 									</li>
-								
+
 								</ul>
 							</div>
 						</div>
 					</div>
-				
+
 					<div id="item5mobile" class="mui-slider-item mui-control-content">
 						<div class="mui-scroll-wrapper">
 							<div class="mui-scroll">
@@ -298,24 +307,24 @@ zc
 									<li class="mui-table-view-cell">
 										7、压力支撑指标：MIKE、BOLL
 									</li>
-									
+
 								</ul>
 							</div>
 						</div>
 					</div>
-					
+
 					<div id="item6mobile" class="mui-slider-item mui-control-content">
 						<div class="mui-scroll-wrapper">
 							<div class="mui-scroll">
 								<ul class="mui-table-view">
-									 <li class="mui-table-view-cell">
-											<font style="color: green;">买入</font>
+									<li class="mui-table-view-cell">
+										<font style="color: green;">买入</font>
 									</li>
 									<li class="mui-table-view-cell">
 										1.要上破均价
 									</li>
-									 <li class="mui-table-view-cell">
-											<font style="color: green;">卖出</font>
+									<li class="mui-table-view-cell">
+										<font style="color: green;">卖出</font>
 									</li>
 									<li class="mui-table-view-cell">
 										1.要有耐心，下跌只要是不破均价的不卖。
@@ -324,41 +333,38 @@ zc
 										2.要在拉升的时候卖出。
 									</li>
 									<li class="mui-table-view-cell">
-								       3.持股要有耐心。
+										3.持股要有耐心。
 									</li>
-									
+
 								</ul>
 							</div>
 						</div>
 					</div>
-					
+
 					<div id="item7mobile" class="mui-slider-item mui-control-content">
-					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll-wrapper">
 							<div class="mui-scroll">
 								<ul class="mui-table-view">
 									<li class="mui-table-view-cell">
-									1.量大本大一定是向上的，MACD大的，看买天比70，主力远小于持30日。
+										1.量大本大一定是向上的，MACD大的，看买天比70，主力远小于持30日。
 									</li>
 									<li class="mui-table-view-cell">
-									2.本小的一定是在底部，本大的在顶部。顶部发生底背离不要选择，一直紧贴量线的也不要。
+										2.本小的一定是在底部，本大的在顶部。顶部发生底背离不要选择，一直紧贴量线的也不要。
 									</li>
 									<li class="mui-table-view-cell">
-									3.量小本大庄家线向的幅度不大。
+										3.量小本大庄家线向的幅度不大。
 									</li>
 									<li class="mui-table-view-cell">
-									4.量大本小。
+										4.量大本小。
 									</li>
 									<li class="mui-table-view-cell">
-									5.
+										5.
 									</li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					
-					
-				
-					
+
 				</div>
 			</div>
 		</div>
@@ -369,11 +375,11 @@ zc
 			mui.init();
 			(function($) {
 				//阻尼系数
-				var deceleration = mui.os.ios?0.003:0.0009;
+				var deceleration = mui.os.ios ? 0.003 : 0.0009;
 				$('.mui-scroll-wrapper').scroll({
 					bounce: false,
 					indicators: true, //是否显示滚动条
-					deceleration:deceleration
+					deceleration: deceleration
 				});
 				$.ready(function() {
 					//循环初始化所有下拉刷新，上拉加载。
@@ -405,7 +411,7 @@ zc
 						var length = ul.querySelectorAll('li').length;
 						var fragment = document.createDocumentFragment();
 						var li;
-						for (var i = 0; i < count; i++) {
+						for(var i = 0; i < count; i++) {
 							li = document.createElement('li');
 							li.className = 'mui-table-view-cell';
 							li.innerHTML = '第' + (index + 1) + '个选项卡子项-' + (length + (reverse ? (count - i) : (i + 1)));
