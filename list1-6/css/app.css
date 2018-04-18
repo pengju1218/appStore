@@ -92,8 +92,10 @@
 }
 
 .mui-table-view-cell {
-	font-size: 0.78rem;
+	font-size: 0.82rem;
 	font-family: kaiti;
+	-webkit-box-pack:justify;
+    -webkit-justify-content:space-between;
 	padding-top: 0.3rem;
 	padding-bottom: 0.3rem;
 	line-height: auto;
@@ -112,6 +114,11 @@ body {
 .mui-table-view-cell m{
 	font-family: sz;
 }
+
+.mui-table-view-cell ls{
+	color:  #9400D3 ;
+}
+
 
 .mui-title {
 	font-family: kaiti;
