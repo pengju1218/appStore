@@ -10,6 +10,7 @@ zc
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	
 		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/aui/aui.css">
 		<style>
 			.mui-bar~.mui-content .mui-fullscreen {
 				top: 44px;
@@ -108,16 +109,24 @@ zc
 			}
 			
 		
-			.mui-table-view-cell ls{
+			ls{
 				color:  #9400D3 ;
 			}
 
-            .mui-table-view-cell no{
+            no{
 				color:  #FF2600;
 			}
 
-			.mui-table-view-cell tic{
+			tic{
 				color:  #ff00ff;
+			}
+			
+			.mui-table-view-header{
+				padding-left: 0.1rem;
+				padding-top: 0.2rem;
+				padding-bottom: 0.2rem;
+				font-size: 0.75rem;
+				background-color: #ADADAD;
 			}
 		    m{
 		    		font-family: sz;
@@ -144,7 +153,7 @@ zc
 			<div id="slider" class="mui-slider mui-fullscreen">
 				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
 					<div class="mui-scroll">
-						<a class="mui-control-item mui-active" href="#item1mobile">
+						<!--<a class="mui-control-item mui-active" href="#item1mobile">
 							选股
 						</a>
 						<a class="mui-control-item" href="#item2mobile">
@@ -160,25 +169,26 @@ zc
 						<a class="mui-control-item" href="#item5mobile">
 							指标
 						</a>
-						<a class="mui-control-item" href="#item6mobile">
-							买卖
-						</a>
+						
 						<a class="mui-control-item" href="#item7mobile">
 							量价
 						</a>
                         <a class="mui-control-item" href="#item8mobile">
 							实战
-						</a>
-					     <a class="mui-control-item" href="#item9mobile">
+						</a>-->
+					     <a class="mui-control-item mui-active"  href="#item9mobile">
 							投机
 						</a>
 					    <a class="mui-control-item" href="#item10mobile">
 							上涨
 						</a>
+						<a class="mui-control-item" href="#item6mobile">
+							买卖
+						</a>
 					</div>
 				</div>
 				<div class="mui-slider-group">
-					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+					<!--<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
 						<div id="scroll1" class="mui-scroll-wrapper">
 							<div class="mui-scroll">
 								<ul class="mui-table-view">
@@ -396,45 +406,102 @@ zc
 									<li class="mui-table-view-cell">
 										<m>2</m>.庄家线上升过快过高的不选。
 									</li>
-								<!--	<li class="mui-table-view-cell">
-										<m>3</m>.
-									</li>
-									<li class="mui-table-view-cell">
-										<m>4</m>.
-									</li>
-									<li class="mui-table-view-cell">
-										<m>5</m>.-->
-									</li>
+								
 								</ul>
 							</div>
 						</div>
 					</div>
+					-->
 					
 					
-					
-                    <div id="item9mobile" class="mui-slider-item mui-control-content">
+                    <div id="item9mobile" class="mui-slider-item mui-control-content mui-active">
+                    	
+                    	
+                    	
+                    	
+                    		
+							
+                    	
+                    	
+                    	
+                    	
 						<div class="mui-scroll-wrapper">
 							<div class="mui-scroll">
 								<ul class="mui-table-view">
+									<li class="mui-table-view-header">
+										要选择的
+									</li>	
 									<li class="mui-table-view-cell">
-										<m>1</m>.现价确认线在20上面，前方无高位的，<ls>如果现价确认线向上的两条线方向很徒并且距离在靠近或者在一起</ls>，布林差小于150，TZB也会一直向上并且明显，3日均线在5日均线上方，
-										<tic>布林差在100的时候要注意分析哪些情况不选</tic>；<ls>如果确认线平走</ls>，那么TZB分为上下两个TZB平走，中间的分散向上；<no>现价确认线的距离大的不选</no>；<no>中间的TZB过于分散不选</no>；<no>TZB3向下的不选</no>。
+										<m>01</m>.现价确认线在20上面，前方无高位的，<ls>如果现价确认线向上的两条线方向很徒并且距离在靠近或者在一起</ls>，布林差小于150，TZB也会一直向上并且明显，3日均线在5日均线上方，
+										<ls>如果确认线平走</ls>，那么TZB分为上下两个TZB平走，中间的分散向上；
 									</li>
 									<li class="mui-table-view-cell">
-										<m>2</m>.<no>庄家线几天内过徒的不选</no>，<no>现价线确认现接近30的时候不要选择</no>，<no>逃顶过80的不选</no>，<no>连续小阴小阳的不选</no>。
+										<m>02</m>.<ls>像上红黄上容易出现确认现价线下折交或者有向下靠近的趋势并且确认线始终高于现价线，如果有靠近就点开现价确认线看看是不是真的靠近</ls>。
 									</li>
 									<li class="mui-table-view-cell">
-										<m>3</m>.确认现价线在20下面，就如果两者距离大，那么3日均线在5日均线上方。
+										<m>03</m>.<ls>像下白红上或才下长红之类的出现那TZB集束明显的在下方运行缓慢向上的时候，必须多在空的上方的时候才能选择，TZB集束平走的不要选择</ls>。
+									</li>	
+									<li class="mui-table-view-cell">
+										<m>04</m>.<ls>当确认现价线距离大并且向上，3日均线必须上穿5日均线</ls>。
+									</li>	
+								    <li class="mui-table-view-cell">
+										<m>05</m>.<ls>当前TZB3上升到100的时候很徒</ls>，后面TZB集束就会有向下的趋向；<ls>当前TZB3上升到100的时候缓慢</ls>，后面TZB集束就会有向上的趋向。
+									</li>
+									
+									
+								
+								    <li class="mui-table-view-header">
+										不选择的
 									</li>
 									<li class="mui-table-view-cell">
-										<m>4</m>.单峰上涨如果不是明显集束并且明显上涨，<no>当TZB3为100的时候并且现价线确认线在20上，如果距离TZB集太远的不选</no>，多于在主力资金在下方的时候。
+										<m>01</m>.<no>在高位，点开后，现价确认线的距离大的不选</no>。
 									</li>
 									<li class="mui-table-view-cell">
-										<m>5</m>.<no>当现价确认线在20上面，前方无高位的，并且确认线在现价线上方，如果现价线变了方向大部分会跌不选</no>
+										<m>02</m>.<no>在高位，TZB过于分散不选，TZB3向下的不选</no>。
+									</li>
+									<li class="mui-table-view-cell">
+										<m>03</m>.<no>在高位，现价线确认现接近30的时候不要选择</no>。
+									</li>
+									<li class="mui-table-view-cell">
+										<m>04</m>.<no>庄角过大的不选，当前方有大量主力时场除外</no>。
+									</li>
+									<li class="mui-table-view-cell">
+										<m>05</m>.<no>单峰上涨的时候，当TZB3为100的时候并且现价线确认线在20上，如果距离TZB集太远的不选</no>。
+									</li>
+									<li class="mui-table-view-cell">
+										<m>06</m>.<no>当现价确认线在20上面，前方无高位的，并且确认线在现价线上方，如果现价线变了方向大部分会跌不选</no>。
 									</li>								
 									<li class="mui-table-view-cell">
-										<m>6</m>.<no>当现价确认线在20上面，前方无高位的，加速5大于加速10的不选/no>
+										<m>07</m>.<no>当现价确认线在20上面，前方无高位的，加速5大于加速10的不选。在高位的时候，加速度一般情况下会一直比较小，当前方有大量主力时场除外</no>。
+									</li>
+									<li class="mui-table-view-cell">
+										<m>08</m>.<no>现价确认线在20上面，前方无高位的，主持与持30相差太多的不要选，比如相并3到4倍</no>。
 									</li>	
+									<li class="mui-table-view-cell">
+										<m>09</m>.<no>短趋势高的不选，当前方有大量主力时场除外</no>。
+									</li>	
+									<li class="mui-table-view-cell">
+										<m>10</m>.<no>上升过程中确认现价线折明显的不选</no>。
+									</li>
+								
+									
+									<li class="mui-table-view-cell">
+										<m>12</m>.<no>TZB集束一直平走的不选</no>。
+									</li>
+									
+									<li class="mui-table-view-header">
+										要注意的
+									</li>
+									<li class="mui-table-view-cell">
+										<m>01</m>.<tic>确认现价线在20下面，就如果两者距离大，那么3日均线在5日均线上方。</tic>。
+									</li>
+									<li class="mui-table-view-cell">
+										<m>02</m>.<tic>单峰上涨如果不是明显集束并且明显上涨，多发生在主力资金在下方的时候。</tic>。
+									</li>					
+									<li class="mui-table-view-cell">
+										<m>03</m>.<tic>标准的下白绿下，3日均线会一直在5日均线下方<tic>。
+									</li>
+									
 								</ul>
 							</div>
 						</div>
@@ -451,6 +518,13 @@ zc
 									<li class="mui-table-view-cell">
 										<m>2</m>.阴线右下十字星。
 									</li>
+									<li class="mui-table-view-cell">
+										<m>3</m>.底部长下影。
+									</li>
+									
+									<li class="mui-table-view-cell">
+										<m>4</m>.今天大阴或者中阴，前一天是阳线并且在长上影。
+									</li>
 								<!--	<li class="mui-table-view-cell">
 										<m>3</m>.
 									</li>
@@ -464,6 +538,43 @@ zc
 							</div>
 						</div>
 					</div>
+					
+					
+					
+						<div id="item6mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										<font style="color: green;">买入</font>
+									</li>
+									<li class="mui-table-view-cell">
+										<m>1</m>.要上破均价
+									</li>
+									<li class="mui-table-view-cell">
+										<font style="color: green;">卖出</font>
+									</li>
+									<li class="mui-table-view-cell">
+										<m>1</m>.要有耐心，下跌只要是不破均价的不卖。
+									</li>
+									<li class="mui-table-view-cell">
+										<m>2</m>.要在拉升的时候卖出。
+									</li>
+									<li class="mui-table-view-cell">
+										<m>3</m>.持股要有耐心。
+									</li>
+									<li class="mui-table-view-cell">
+										<m>4</m>.分时成交量连红的是高点。
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					
 					
 				</div>
 			</div>
@@ -523,5 +634,5 @@ zc
 			})(mui);
 		</script>
 	</body>
-
+<script type="text/javascript" src="js/aui/api.js" ></script>
 </html>
