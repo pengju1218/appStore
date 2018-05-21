@@ -48,7 +48,8 @@ var json={"down_green_white_up":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_up/2018-05-20_151905.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_up/2018-05-20_152238.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_up/2018-05-20_153216.png'/></a>"+
-"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_up/2018-05-20_154229.png'/></a>","down_green_white_V_down":
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_up/2018-05-20_154229.png'/></a>"+
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_up/2018-05-21_192905.png'/></a>","down_green_white_V_down":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_V_down/2018-05-18_182934.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_V_down/2018-05-18_190331.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_V_down/2018-05-19_110949.png'/></a>"+
@@ -400,7 +401,8 @@ var json={"down_green_white_up":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_green/2018-05-20_145539.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_green/2018-05-20_151554.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_green/2018-05-20_152351.png'/></a>"+
-"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_green/2018-05-20_152944.png'/></a>","up_long_red":
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_green/2018-05-20_152944.png'/></a>"+
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_green/2018-05-21_192831.png'/></a>","up_long_red":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_red/2018-05-17_165437.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_red/2018-05-17_212141.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_red/2018-05-18_181129.png'/></a>"+
@@ -475,7 +477,8 @@ var json={"down_green_white_up":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_white/2018-05-20_151103.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_white/2018-05-20_151613.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_white/2018-05-20_152714.png'/></a>"+
-"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_white/2018-05-20_152842.png'/></a>","up_long_yellow":
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_white/2018-05-20_152842.png'/></a>"+
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_white/2018-05-21_192739.png'/></a>","up_long_yellow":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_yellow/2018-05-17_165344.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_yellow/2018-05-17_212548.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_yellow/2018-05-17_213408.png'/></a>"+
@@ -638,7 +641,8 @@ var json={"down_green_white_up":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_yellow_up/2018-05-20_133954.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_yellow_up/2018-05-20_142339.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_yellow_up/2018-05-20_144053.png'/></a>"+
-"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_yellow_up/2018-05-20_153722.png'/></a>","up_yellow_red_flat":
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_yellow_up/2018-05-20_153722.png'/></a>"+
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_yellow_up/2018-05-21_192627.png'/></a>","up_yellow_red_flat":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_yellow_red_flat/2018-05-18_221749.png'/></a>","up_yellow_white_down":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_yellow_white_down/2018-05-17_165712.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_yellow_white_down/2018-05-17_210744.png'/></a>"+
@@ -702,8 +706,6 @@ var json={"down_green_white_up":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_yellow_white_down/2018-05-20_153544.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_yellow_white_down/2018-05-20_153923.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_yellow_white_down/2018-05-20_154548.png'/></a>"
-
-
 
 
 
