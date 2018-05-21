@@ -1,0 +1,44 @@
+.playbox {
+	display: -webkit-box;
+	display: flex;
+	display: -webkit-flex flex-direction:row;
+	flex-wrap: wrap;
+	/*不换行*/
+	width: 100%;
+	border: 0px solid #e72a54;
+}
+
+.playbox a {
+	width: 25%;
+	height: auto;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	border: 1px solid green;
+	margin-bottom: 1rem;
+}
+
+.playbox a img {
+	width: 96%;
+	height: 25rem;
+}
+
+#showImg{
+	position: fixed;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+	width: 98%;
+	height: 100%;
+	text-align: center;
+	background: green;
+	display: none;
+	overflow-y: auto;
+	
+}
+
+#showImg img{
+
+	margin-top: 0.5rem;
+	width: 98%;
+	height: 150%;
+}
