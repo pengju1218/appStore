@@ -754,3 +754,11 @@ function fetchJson(){
 
     add_list.innerHTML=key;
 }
+
+
+
+function closeWin() {
+	window.location.href = "../choice72.html";
+	//history.go(-1);
+	api.closeWin({});
+}

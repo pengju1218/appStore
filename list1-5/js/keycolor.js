@@ -29,6 +29,14 @@ function keyLightList(cls, lis, color) {
 
 }
 
+
+function closeWin() {
+				window.location.href = "../choice5.html";
+				//history.go(-1);
+
+				api.closeWin({});
+			}
+
 var textOne1 = ['内能大', '波段大', '神拐大', '独立大', '坑大均', '运筹大均', '三乖大'];
 var textOne2 = ['内能小', '波段小', '神拐小', '独立小', '坑小均', '运筹小均', '三乖小'];
 keyLightList('mui-table-view', textOne1, 'red');
