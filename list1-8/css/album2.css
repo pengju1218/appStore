@@ -1,0 +1,33 @@
+.list_album {
+	margin-top: -1rem;
+	display: -webkit-grid;
+	width: 100%;
+	height: auto;
+	-webkit-grid-auto-rows: inherit;
+}
+
+.list_album img {
+	width: 49.3%;
+	height: 29rem;
+}
+
+#ok_dialog{
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	position: fixed;
+	top: 3rem;
+	left: 0rem;
+	display: none;
+	z-index: 2;
+	text-align: center;
+	padding-bottom: 3rem;
+	background-color: rgba(102, 0, 255,02);
+
+}
+
+#ok_dialog img {
+	
+	width: 99%;
+	height: auto;
+}

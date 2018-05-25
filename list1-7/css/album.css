@@ -1,5 +1,4 @@
 .playbox {
-	display: -webkit-box;
 	display: flex;
 	display: -webkit-flex flex-direction:row;
 	flex-wrap: wrap;
@@ -11,14 +10,15 @@
 .playbox a {
 	width: 25%;
 	height: auto;
+    -webkit-flex-wrap: nowrap;
 	display: -webkit-flex;
 	-webkit-justify-content: center;
 	border: 1px solid green;
-	margin-bottom: 1rem;
+	margin-bottom: 0.7rem;
 }
 
 .playbox a img {
-	width: 96%;
+	width: 98.5%;
 	height: 25rem;
 }
 
@@ -27,7 +27,7 @@
 	z-index: 2;
 	top: 0px;
 	left: 0px;
-	width: 98%;
+	width:100%;
 	height: 100%;
 	text-align: center;
 	background: green;
@@ -39,6 +39,6 @@
 #showImg img{
 
 	margin-top: 0.5rem;
-	width: 98%;
+	width: 99.5%;
 	height: 150%;
 }
