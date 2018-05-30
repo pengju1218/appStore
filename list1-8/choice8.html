@@ -13,6 +13,24 @@
 		<link rel="stylesheet" href="css/album2.css">
 		<script src="../js/mui.min.js"></script>
 		<script src="js/show-img.js"></script>
+		<style type="text/css">		
+		.show-img{
+			padding-top: 0.5rem;
+			background-size: 100% 100%;
+			margin-left: 0.05rem;
+			display: inline-block;
+		    font-family: kaiti;
+			width: 49.5%;
+			height: 29.4rem;
+			color: rgb(0,255,0);
+			text-align: center;
+			font-size: 1.3rem;
+		}
+		.show-img img{
+			width: 99.9%;
+		
+		}
+		</style>
 	</head>
 
 	<body>
@@ -32,27 +50,80 @@
 		</script>
 
 		<div class="mui-content">
-			<div class="list_album">
-				<img src='img/2018-05-25_213150.png'   onclick='showImg(this)'/>
-				<img src='img/2018-05-25_213214.png'   onclick='showImg(this)'/>
-				<img src='img/2018-05-25_213240.png'   onclick='showImg(this)'/>
-				<img src='img/2018-05-25_213309.png'   onclick='showImg(this)'/>
-				<img src='img/2018-05-25_213320.png'   onclick='showImg(this)'/>
-				<img src='img/2018-05-25_213400.png'   onclick='showImg(this)'/>
-				<img src='img/2018-05-25_213432.png'   onclick='showImg(this)'/>
-				<img src='img/2018-05-25_213446.png'   onclick='showImg(this)'/>
-
+			<div class="list_album"> 
+				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-25_213150.png);' > 下长红</p>
+				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-25_213214.png);' >上绿白V下</p>
+				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-28_162218.png);' >下绿白V下</p>
 				
-			</div>
+				
+				
+				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-25_213240.png);' > 下白红上</p>
+				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-25_213309.png);' > 下白红上</p>
+				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-25_213320.png);' > 下长红</p>
+				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-25_213400.png);' > 上长白(红)</p>
+				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-25_213446.png);' > 上长白(黄)</p>
+				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-28_161802.png);' > 上长白(白)</p>
+				
+				
+				
+				
+				
+				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-25_213432.png);' > 上红白下</p>
+				
+				
+				
+				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-25_215046.png);' > 上黄白下</p>
+				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-28_080202.png);' > 上黄白下</p>
+				
+				
+				
+				
+				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-28_205908.png);' > 上长绿</p>
+				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-28_120233.png);' > 上白绿下</p>
+			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-28_150330.png);' > 上绿白上</p>
+			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-28_153039.png);' > 下长红(分散)</p>
+			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-28_154710.png);' > 上长红(向下)</p>
+			    
+			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-29_160515.png);' > 上长红(向下确认线下穿)</p>
+			    
+			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-28_160119.png);' > 上白绿下(标准)</p>
+			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-28_160419.png);' > 下长白(红)</p>
+			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-28_161457.png);' > 下长白(白)</p>
+			   
+			    
+			    
+			    
+			    
+			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-30_110825.png);' > 下绿白上</p>
+			    
 			
+			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-30_124341.png);' > 下长绿(庄角小绿平缓)</p>
+				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-30_124720.png);' > 下长绿(倒V折)</p>
+				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-30_124832.png);' > 下长绿(庄角大)</p>
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</div>
 			<div id="ok_dialog">
 				<img id="my-img"/>
-				
+				<span id="explain"></span>
 			</div>
 		
 	
         
 		</div>
+		
+
 	</body>
 
 </html>

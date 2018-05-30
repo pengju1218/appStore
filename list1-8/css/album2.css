@@ -1,16 +1,20 @@
 .list_album {
-	margin-top: -1rem;
+	padding-left: 0.05rem;
+	
 	display: -webkit-grid;
 	width: 100%;
 	height: auto;
-	-webkit-grid-auto-rows: inherit;
+	grid-auto-rows: initial;
 }
 
-.list_album img {
-	width: 49.3%;
-	height: 29rem;
-}
 
+.show-img font{
+	overflow-y: scroll;
+	color: white;
+
+	
+	
+}
 #ok_dialog{
 	width: 100%;
 	height: 100%;
@@ -19,15 +23,37 @@
 	top: 3rem;
 	left: 0rem;
 	display: none;
-	z-index: 2;
+	z-index: 9;
 	text-align: center;
 	padding-bottom: 3rem;
-	background-color: rgba(102, 0, 255,02);
+	background-color: rgba(138,43,226,1);
 
 }
 
 #ok_dialog img {
-	
 	width: 99%;
 	height: auto;
+}
+
+
+@font-face {
+	font-family: kaiti;
+	src: url(../../fonts/mikaiti.ttf);
+
+}
+
+
+
+#explain{
+	text-decoration:underline;
+	line-height: 2rem;
+	text-indent: 2rem;
+	color: white;
+	font-size: 1.1rem;
+	font-family: kaiti;
+	display: block;
+	text-align: left;
+	width: 99%;
+	height: auto;
+	margin-bottom: 0.2rem;
 }
