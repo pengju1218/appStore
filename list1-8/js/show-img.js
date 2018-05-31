@@ -27,6 +27,8 @@ function getStr(imgSrc) {
 		return ''
 	}else if(imgSrc.indexOf("2018-05-30_124720") != -1) {
 		return '下长绿有折的时候前一天的K线有长上影或长下影。';
+	}else if(imgSrc.indexOf("2018-05-30_124832") != -1) {
+		return '确认现价线前方的距离不能太大。';
 	}else {
 		return '';
 	}
@@ -69,4 +71,29 @@ function getItem() {
 		//}
 	}
 
+}
+
+function fold(obj){
+	
+	var imgS=obj.children[1];
+	
+
+	 var div1=obj.nextElementSibling;
+    if(div1.style.display=="block"){
+        div1.style.display="none";
+       imgS.src="img/up.png";
+
+    }else{
+        div1.style.display="block";
+       imgS.src="img/down.png";
+         
+    }
+}
+
+function refresh(){
+	var divs=document.getElementsByClassName("list_album");
+	for(var i=0;i<divs.length;i++){
+		divs[i].style.display="none";
+	}
+	
 }

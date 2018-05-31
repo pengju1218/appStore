@@ -1,6 +1,6 @@
 .list_album {
+	display: none;
 	padding-left: 0.05rem;
-	
 	display: -webkit-grid;
 	width: 100%;
 	height: auto;
@@ -11,9 +11,6 @@
 .show-img font{
 	overflow-y: scroll;
 	color: white;
-
-	
-	
 }
 #ok_dialog{
 	width: 100%;
