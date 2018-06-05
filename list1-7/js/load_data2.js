@@ -125,7 +125,8 @@ var json={
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_green/2018-05-31_095853.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_green/2018-06-01_083235.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_green/2018-06-01_083248.png'/></a>"+
-"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_green/2018-06-01_083307.png'/></a>","down_long_red":
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_green/2018-06-01_083307.png'/></a>"+
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_green/2018-06-01_194900.png'/></a>","down_long_red":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_red/2018-05-17_164410.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_red/2018-05-17_213511.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_red/2018-05-17_213536.png'/></a>"+
@@ -301,7 +302,8 @@ var json={
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_white_red_up/2018-05-20_154113.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_white_red_up/2018-05-20_154144.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_white_red_up/2018-05-22_154859.png'/></a>"+
-"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_white_red_up/2018-05-23_163939.png'/></a>","up_green_white_up":
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_white_red_up/2018-05-23_163939.png'/></a>"+
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_white_red_up/2018-06-04_154452.png'/></a>","up_green_white_up":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_green_white_up/2018-05-17_211040.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_green_white_up/2018-05-17_212301.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_green_white_up/2018-05-17_213647.png'/></a>"+
@@ -499,7 +501,8 @@ var json={
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_white/2018-05-20_152842.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_white/2018-05-21_192739.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_white/2018-05-24_201727.png'/></a>"+
-"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_white/2018-05-25_152322.png'/></a>","up_long_yellow":
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_white/2018-05-25_152322.png'/></a>"+
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_white/2018-06-04_154429.png'/></a>","up_long_yellow":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_yellow/2018-05-17_165344.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_yellow/2018-05-17_212548.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_yellow/2018-05-17_213408.png'/></a>"+
@@ -618,7 +621,10 @@ var json={
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_green_down/2018-05-20_150132.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_green_down/2018-05-20_154622.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_green_down/2018-05-20_154733.png'/></a>"+
-"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_green_down/2018-06-01_083401.png'/></a>","up_white_red_up":
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_green_down/2018-06-01_083401.png'/></a>"+
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_green_down/2018-06-04_154330.png'/></a>"+
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_green_down/2018-06-04_154337.png'/></a>"+
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_green_down/2018-06-04_154353.png'/></a>","up_white_red_up":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_red_up/2018-05-18_221208.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_red_up/2018-05-19_111530.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_white_red_up/2018-05-19_151544.png'/></a>"+
