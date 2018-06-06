@@ -10,9 +10,12 @@
 
 		<link rel="stylesheet" href="css/mui.min.css">
 		<link rel="stylesheet" href="css/app.css">
+		
 		<link rel="stylesheet" href="css/album2.css">
 		<script src="../js/mui.min.js"></script>
 		<script src="js/show-img.js"></script>
+	
+		<script src="js/showTip.js"></script>
 		<style type="text/css">		
 		.show-img{
 			padding-top: 0.5rem;
@@ -63,6 +66,19 @@
 			width: 1.5rem;
 			height: auto;
 		}
+		
+		.list_img_ok{
+			
+			text-align: left;
+			padding-left: 0.3rem;
+			padding-top: 0.2rem;
+			padding-bottom: 0.2rem;
+			font-size: 0.98rem;
+			background-color: #ADADAD;
+			font-family: kaiti;
+		}
+		
+		
 		</style>
 	</head>
 
@@ -89,187 +105,195 @@
 
 		<div class="mui-content">
 			
-			<div class="list_key"   onclick="fold(this)"><m>01</m>.上白红上<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>01</m>.上白红上<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-01_130611.png);' > 上白红上(横穿)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-01_131918.png);' > 上白红上(贴V底部)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-01_130611.png);' > 上白红上(横穿)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-01_131918.png);' > 上白红上(贴V底部)</p>
 			   
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>02</m>.上白黄上<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>02</m>.上白黄上<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_134228.png);' > 上白黄上(均线下交)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_143552.png);' > 上白黄上(TZB将上集)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_144343.png);' > 上白黄上(TZB已上集)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_134228.png);' > 上白黄上(均线下交)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_143552.png);' > 上白黄上(TZB将上集)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_144343.png);' > 上白黄上(TZB已上集)</p>
 			   
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>03</m>.上白绿下<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>03</m>.上白绿下<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_151448.png);' > 上白绿下(下集)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_151844.png);' > 上白绿下(半V集)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_152410.png);' > 上白绿下(全V集)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_151448.png);' > 上白绿下(下集)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_151844.png);' > 上白绿下(半V集)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_152410.png);' > 上白绿下(全V集)</p>
 			    
 				
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>04</m>.上红白下<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>04</m>.上红白下<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_153245.png);' > 上红白下(集V)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_153648.png);' > 上红白下(穿V)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_154659.png);' > 上红白下(穿小V)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_153245.png);' > 上红白下(集V)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_153648.png);' > 上红白下(穿V)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_154659.png);' > 上红白下(穿小V)</p>
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>05</m>.上红黄上<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>05</m>.上红黄上<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_160445.png);' > 上红黄上(长慢集)</p>
-		        <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_160719.png);' > 上红黄上(短快集)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_160445.png);' > 上红黄上(长慢集)</p>
+		        <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_160719.png);' > 上红黄上(短快集)</p>
 		
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>06</m>.上黄白下<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>06</m>.上黄白下<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-25_215046.png);' > 上黄白下(确认线上穿)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-28_080202.png);' > 上黄白下(确认线下穿)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-05-25_215046.png);' > 上黄白下(确认线上穿)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-05-28_080202.png);' > 上黄白下(确认线下穿)</p>
 				
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>07</m>.上黄红平<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>07</m>.上黄红平<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-01_111018.png);' >上黄红平</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-01_111018.png);' >上黄红平</p>
 				
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>08</m>.上绿白V下<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>08</m>.上绿白V下<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-25_213214.png);' >上绿白V下(二分集)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-05_101436.png);' >上绿白V下(半V下穿)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-05_102130.png);' >上绿白V下(半V未穿)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-05-25_213214.png);' >上绿白V下(二分集)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-05_101436.png);' >上绿白V下(半V下穿)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-05_102130.png);' >上绿白V下(半V未穿)</p>
 				
 				
 				
 				
 				
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>09</m>.上绿白上<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>09</m>.上绿白上<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-05_084815.png);' > 上绿白上(前上集)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-05_085230.png);' > 上绿白上(上穿)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-05_085715.png);' > 上绿白上(前上穿)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-05_084815.png);' > 上绿白上(前上集)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-05_085230.png);' > 上绿白上(上穿)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-05_085715.png);' > 上绿白上(前上穿)</p>
 			   
 
                
 			
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>10</m>.上长白<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>10</m>.上长白<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-04_130418.png);' > 上长白(全V)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-04_125945.png);' > 上长白(向下)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-04_125331.png);' > 上长白(下穿)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-04_130418.png);' > 上长白(全V)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-04_125945.png);' > 上长白(向下)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-04_125331.png);' > 上长白(下穿)</p>
 				
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>11</m>.上长红<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>11</m>.上长红<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_085348.png);' > 上长红(半V)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_085810.png);' > 上长红(全V)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_085903.png);' > 上长红(弯折上)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_090124.png);' > 上长红(长集)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_090356.png);' > 上长红(直上)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-03_085348.png);' > 上长红(半V)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-03_085810.png);' > 上长红(全V)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-03_085903.png);' > 上长红(弯折上)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-03_090124.png);' > 上长红(长集)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-03_090356.png);' > 上长红(直上)</p>
 			
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>12</m>.上长黄<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>12</m>.上长黄<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_162429.png);' > 上长黄(TZB未集完)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_162642.png);' > 上长黄(TZB已集完)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_162858.png);' > 上长黄(TZB弯折上)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_162429.png);' > 上长黄(TZB未集完)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_162642.png);' > 上长黄(TZB已集完)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_162858.png);' > 上长黄(TZB弯折上)</p>
 				
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>13</m>.上长绿<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>13</m>.上长绿<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_184325.png);' > 上长绿(全V)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_184518.png);' > 上长绿(半V)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_184746.png);' > 上长绿(倒全V)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_184933.png);' > 上长绿(TZB3上穿)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-02_185717.png);' > 上长绿(TZB下集)</p>
-				
-				
-				
-			</div>
-			<div class="list_key"   onclick="fold(this)"><m>14</m>.下白红上<img src="img/up.png"  /></div>
-			<div class="list_album"> 
-				
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_102427.png);' > 下白红上(半V下)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_103334.png);' > 下白红上(直上)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_104332.png);' > 下白红上(红三兵)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_104523.png);' > 下白红上(弯上)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_111247.png);' > 下白红上(前V)</p>
-				
-				
-				
-				
-				
-				
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_184325.png);' > 上长绿(全V)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_184518.png);' > 上长绿(半V)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_184746.png);' > 上长绿(倒全V)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_184933.png);' > 上长绿(TZB3上穿)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-02_185717.png);' > 上长绿(TZB下集)</p>
 				
 				
 				
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>15</m>.下白绿下<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>14</m>.下白红上<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-01_103745.png);' > 下白绿下(集束向上)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-01_104023.png);' > 下白绿下(倒T)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-01_104451.png);' > 下白绿下(集束向下)</p>
+				
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-03_102427.png);' > 下白红上(半V下)</p>
+				<p class='show-img' ok='2018-06-06_160120,2018-06-06_160132' onclick='showImg(this)' style='background-image: url(img/2018-06-03_103334.png);' > 下白红上(直上集中)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-05_140126.png);' > 下白红上(直上分散)</p>
+				
+				
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-03_104332.png);' > 下白红上(红三兵)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-03_104523.png);' > 下白红上(弯上)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-03_111247.png);' > 下白红上(前V)</p>
+				
+				
+				
+				
+				
+				
+				
+				
 				
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>16</m>.下红白下<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>15</m>.下白绿下<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_161658.png);' >下红白下(半V)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-01_103745.png);' > 下白绿下(集束向上)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-01_104023.png);' > 下白绿下(倒T)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-01_104451.png);' > 下白绿下(集束向下)</p>
 				
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>17</m>.下绿白V下<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>16</m>.下红白下<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-28_162218.png);' >下绿白V下</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-03_161658.png);' >下红白下(半V)</p>
+				
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>18</m>.下绿白上<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>17</m>.下绿白V下<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-30_110825.png);' > 下绿白上(上穿)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-04_102007.png);' > 下绿白上(V穿)</p>
-                <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-04_094457.png);' > 下绿白上(二接力)</p>
-                <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-04_094750.png);' > 下绿白上(弯折上)</p>
-                <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-04_101406.png);' > 下绿白上(全V长下影)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-04_100117.png);' > 下绿白上(全V长上影)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-05-28_162218.png);' >下绿白V下(分散)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-06_120214.png);' >下绿白V下(二分)</p>
+			
+			    
+			</div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>18</m>.下绿白上<img src="img/up.png"  /></div>
+			<div class="list_album"> 
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-05-30_110825.png);' > 下绿白上(上穿)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-04_102007.png);display: none;' > 下绿白上(V穿)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-06_091128.png);' > 下绿白上(类V折)</p>
+			       
+                <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-04_094457.png);' > 下绿白上(二接力)</p>
+                <p class='show-img' ok='2018-06-06_160156' onclick='showImg(this)' style='background-image: url(img/2018-06-04_094750.png);' > 下绿白上(弯折上)</p>
+                <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-04_101406.png);' > 下绿白上(全V长下影)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-04_100117.png);' > 下绿白上(全V长上影)</p>
 			    
 
 
 
 
-                <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-04_093303.png);' > 下绿白上(倒V)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-04_093850.png);' > 下绿白上(并阴)</p>
+                <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-04_093303.png);' > 下绿白上(倒V)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-04_093850.png);' > 下绿白上(并阴)</p>
 			    
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-04_100322.png);' > 下绿白上(并阳)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-04_100322.png);' > 下绿白上(并阳)</p>
 			    
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>19</m>.下长白<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>19</m>.下长白<img src="img/up.png"  /></div>
 			<div class="list_album"> 
 				
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-04_110905.png);' > 下长白(全V)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-04_112201.png);' > 下长白(倒V)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-04_112407.png);' > 下长白(穿V)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-04_112552.png);' > 下长白(浅V)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-04_110905.png);' > 下长白(全V)</p>
+			    <p class='show-img' ok='2018-06-06_130003' onclick='showImg(this)' style='background-image: url(img/2018-06-04_112201.png);'> 下长白(倒V)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-04_112407.png);' > 下长白(穿V)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-04_112552.png);' > 下长白(浅V)</p>
 			   
 			  
 			 
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>20</m>.下长红<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>20</m>.下长红<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_203912.png);' > 下长红(全L)</p>
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_210214.png);' > 下长红(短下集束远)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_210405.png);' > 下长红(短下一般)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_211023.png);' > 下长红(长下)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_212220.png);' > 下长红(向上一般)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-06-03_212530.png);' > 下长红(向上集束远)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-03_203912.png);' > 下长红(全L)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-03_210214.png);' > 下长红(短下集束远)</p>
+				<p class='show-img' ok='2018-06-06_150636' onclick='showImg(this)' style='background-image: url(img/2018-06-03_210405.png);' > 下长红(短下一般)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-03_211023.png);' > 下长红(长下)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-03_212220.png);' > 下长红(向上一般)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-06-03_212530.png);' > 下长红(向上集束远)</p>
 				
 				
 				
 			</div>
-			<div class="list_key"   onclick="fold(this)"><m>21</m>.下长绿<img src="img/up.png"  /></div>
+			<div class="list_key"   ok='' onclick="fold(this)"><m>21</m>.下长绿<img src="img/up.png"  /></div>
 			<div class="list_album"> 
-			    <p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-30_124341.png);' > 下长绿(庄角小绿平缓)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-30_124720.png);' > 下长绿(倒V折)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-30_124832.png);' > 下长绿(庄角大)</p>
-				<p class='show-img' onclick='showImg(this)' style='background-image: url(img/2018-05-31_095853.png);' > 下长绿(庄角大长下影)</p>
+			    <p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-05-30_124341.png);' > 下长绿(庄角小绿平缓)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-05-30_124720.png);' > 下长绿(倒V折)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-05-30_124832.png);' > 下长绿(庄角大)</p>
+				<p class='show-img' ok='' onclick='showImg(this)' style='background-image: url(img/2018-05-31_095853.png);' > 下长绿(庄角大长下影)</p>
 				
 			</div>
 			
@@ -279,6 +303,8 @@
 			<div id="ok_dialog">
 				<img id="my-img"/>
 				<span id="explain"></span>
+				<div class="list_img_ok" id="show-bian">变种代表</div>
+				
 			</div>
 		
 	

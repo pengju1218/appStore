@@ -1,24 +1,59 @@
+
 function showImg(img) {
 
 	var dia = document.getElementById("ok_dialog");
 	//alert(img.style.backgroundImage);
 	var my_ss = document.getElementById('my-img');
 	var str_url = img.style.backgroundImage;
+    var imgStr=img.getAttribute('ok').split(',');
+    var showB=document.getElementById('show-bian');
+    	if(img.getAttribute('ok')===''){
+    		showB.innerHTML='显示变种(无)'
+    	}else{
+            showB.innerHTML='显示变种(有)'
+          for(var j=0;j<imgStr.length;j++){
+	    	var img=document.createElement('img');
+	    	img.src="images/"+imgStr[j]+".png";
+	    	
+	    	img.style.width="99%";
+	    	img.style.marginLeft="0.5%";
+	    	img.style.marginBottom="0.7rem";
+	    	img.style.display="none";
+	    	img.setAttribute("class","show-all-img"); 
+	    	dia.appendChild(img);
+	    	
+	      }
+    	}      
+
 	var ls_scr = str_url.substr(str_url.indexOf('img'), str_url.length);
 	ls_scr = ls_scr.substr(0, ls_scr.length - 1);
 	var text = document.getElementById('explain');
 	text.innerHTML = getStr(str_url);
 	my_ss.src = ls_scr;
-	document.body.style.overflowY = 'hidden'
+	document.body.style.overflowY = 'hidden';
 	dia.style.display = "block";
 	dia.style.overflowY = "scroll";
 
 	dia.onclick = function() {
-
+        var imgs=document.getElementsByClassName('show-all-img');
+		  for(var i=0;i<imgs.length;i++){
+			dia.removeChild(imgs[i]);
+		  }
 		document.body.style.overflowY = 'scroll'
 		dia.style.display = "none";
-
+	  
 	};
+
+
+
+
+
+  var obj3=document.getElementById('show-bian');  
+  obj3.addEventListener('click',function(e){
+
+  	show();
+  	e.stopPropagation();
+  	},true);
 
 }
 
@@ -74,7 +109,7 @@ function getStr(imgSrc) {
 	}else if(imgSrc.indexOf("2018-06-04_094750") != -1) {
 		return '下绿白上，弯折上的K线的下影线长的确认现价线的距离变大；K线的上影线长的确认现价线的距离变小。';
 	}else if(imgSrc.indexOf("2018-06-04_110905") != -1) {
-		return '下长白，全V的变种较多并且常见，要注意，但不会变太大，多是现价确认线不一样。';
+		return '下长白，全V的前方有平集束，全V的变种较多并且常见，要注意，但不会变太大，多是现价确认线不一样。';
 	}else if(imgSrc.indexOf("2018-06-04_125945") != -1) {
 		return '上长白，向下有明显的确认线穿现价线。';
 	}else if(imgSrc.indexOf("2018-06-04_130418") != -1) {
@@ -85,12 +120,16 @@ function getStr(imgSrc) {
 		return '上绿白上，上穿的变种较多，确认线表现为上穿或者靠近。';
 	}else if(imgSrc.indexOf("2018-06-05_085715") != -1) {
 		return '上绿白上，前上穿表现为前方有过TZB3上穿，3日均线即将上穿5日均线。';
+	}else if(imgSrc.indexOf("2018-06-06_091128") != -1) {
+		return '上绿白上，类V折，也可是倒梯形，TZB3大部分时间都最大。';
 	}else if(imgSrc.indexOf("2018-06-05_101436") != -1) {
-		return '上绿白V下，半V下穿的表现为TZB3从最高到最低的现像，确认现价线的距离变小。';
+		return '上绿白V下，确认线在上方或者下方都是可以的，半V下穿的表现为TZB3从最高到最低的现像，确认现价线的距离变小。';
 	}else if(imgSrc.indexOf("2018-06-05_102130") != -1) {
 		return '上绿白V下，半V未穿的表现为TZB3最高的时候，表现为上穿；当TZB3在中间的时候，表现为确认线已经上穿，并且确认现价线之间的距离变短。';
 	}else if(imgSrc.indexOf("2018-05-25_213214") != -1) {
 		return '上绿白V下，二分集表现为两份集束走向。';
+	}else if(imgSrc.indexOf("2018-06-06_120214") != -1) {
+		return '下绿白V下，二分表现确认现价线和距离可大可小。';
 	}
 	
 	
@@ -179,4 +218,17 @@ function refresh(){
 	 var imgS=	list_div[i].children[1];
 		imgS.src="img/up.png";
 	}
+}
+
+
+function show(){
+	Toast('很快会显示。',2000);
+	
+	var dia = document.getElementById("ok_dialog");
+	var imgs=document.getElementsByClassName('show-all-img');
+	//alert(imgs[0].src);
+	for(var i=0;i<imgs.length;i++){
+		imgs[i].style.display="block";
+	}
+	
 }

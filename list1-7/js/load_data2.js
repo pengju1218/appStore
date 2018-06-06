@@ -52,7 +52,8 @@ var json={
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_up/2018-05-20_154229.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_up/2018-05-21_192905.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_up/2018-05-21_193844.png'/></a>"+
-"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_up/2018-05-30_110825.png'/></a>","down_green_white_V_down":
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_up/2018-05-30_110825.png'/></a>"+
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_up/2018-06-05_171456.png'/></a>","down_green_white_V_down":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_V_down/2018-05-18_182934.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_V_down/2018-05-18_190331.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_green_white_V_down/2018-05-19_110949.png'/></a>"+
@@ -185,7 +186,8 @@ var json={
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_red/2018-05-20_151138.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_red/2018-05-20_152006.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_red/2018-05-20_153519.png'/></a>"+
-"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_red/2018-05-20_154038.png'/></a>","down_long_white":
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_red/2018-05-20_154038.png'/></a>"+
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_red/2018-06-05_171535.png'/></a>","down_long_white":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_white/2018-05-17_211310.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_white/2018-05-17_211900.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_white/2018-05-18_175802.png'/></a>"+
@@ -223,7 +225,8 @@ var json={
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_white/2018-05-20_150231.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_white/2018-05-20_151233.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_white/2018-05-20_152108.png'/></a>"+
-"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_white/2018-05-20_153855.png'/></a>","down_red_white_down":
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_white/2018-05-20_153855.png'/></a>"+
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_long_white/2018-06-05_171437.png'/></a>","down_red_white_down":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_red_white_down/2018-05-17_164805.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_red_white_down/2018-05-17_212036.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_red_white_down/2018-05-18_182735.png'/></a>"+
@@ -237,7 +240,8 @@ var json={
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_red_white_down/2018-05-19_190608.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_red_white_down/2018-05-20_122437.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_red_white_down/2018-05-20_134830.png'/></a>"+
-"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_red_white_down/2018-05-20_144530.png'/></a>","down_white_green_down":
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_red_white_down/2018-05-20_144530.png'/></a>"+
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/down_red_white_down/2018-06-05_171509.png'/></a>","down_white_green_down":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_white_green_down/2018-05-18_173729.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_white_green_down/2018-05-18_181445.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/down_white_green_down/2018-05-19_112622.png'/></a>"+
@@ -367,7 +371,8 @@ var json={
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_green_white_V_down/2018-05-20_135213.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_green_white_V_down/2018-05-20_150730.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_green_white_V_down/2018-05-20_154015.png'/></a>"+
-"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_green_white_V_down/2018-05-22_154850.png'/></a>","up_long_green":
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_green_white_V_down/2018-05-22_154850.png'/></a>"+
+"<a  onclick='add(this.innerHTML)'><img src='../_assets/up_green_white_V_down/2018-06-05_171521.png'/></a>","up_long_green":
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_green/2018-05-17_210934.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_green/2018-05-17_212748.png'/></a>"+
 "<a  onclick='add(this.innerHTML)'><img src='../_assets/up_long_green/2018-05-18_180811.png'/></a>"+
