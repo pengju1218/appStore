@@ -14,13 +14,15 @@ function showImg(img) {
           for(var j=0;j<imgStr.length;j++){
 	    	var img=document.createElement('img');
 	    	img.src="images/"+imgStr[j]+".png";
-	    	
+	    	img.style.borderBottom="0.4rem solid white"
 	    	img.style.width="99%";
 	    	img.style.marginLeft="0.5%";
 	    	img.style.marginBottom="0.7rem";
 	    	img.style.display="none";
 	    	img.setAttribute("class","show-all-img"); 
 	    	dia.appendChild(img);
+	    	
+	    	
 	    	
 	      }
     	}      
