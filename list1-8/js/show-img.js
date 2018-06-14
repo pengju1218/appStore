@@ -12,6 +12,8 @@ function showImg(img) {
     	}else{
             showB.innerHTML='显示变种(有)'
           for(var j=0;j<imgStr.length;j++){
+          	
+          	
 	    	var img=document.createElement('img');
 	    	img.src="images/"+imgStr[j]+".png";
 	    	img.style.borderBottom="0.4rem solid white"
@@ -38,12 +40,14 @@ function showImg(img) {
 
 	dia.onclick = function() {
         var imgs=document.getElementsByClassName('show-all-img');
-		  for(var i=0;i<imgs.length;i++){
-			dia.removeChild(imgs[i]);
-		  }
-		document.body.style.overflowY = 'scroll'
+        while(document.getElementsByClassName('show-all-img').length>0){
+        	var imgs=document.getElementsByClassName('show-all-img');
+            for(var i=0;i<imgs.length;i++){
+				dia.removeChild(imgs[i]);
+		    }
+        }
+        document.body.style.overflowY = 'scroll'
 		dia.style.display = "none";
-	  
 	};
 
 
@@ -96,9 +100,7 @@ function getStr(imgSrc) {
 		return '下长红，短下一般，这类确认现价线还有向上距离变大的情况出现。';
 	}else if(imgSrc.indexOf("2018-06-03_212220") != -1) {
 		return '下长红，此形态的股票，要么确认已经靠近现价线或者确认线已经下穿了；特殊的当TZB3达不到100的时候，所表现的是确认现价线之间的距离会变大。';
-	}
-	
-	else if(imgSrc.indexOf("2018-06-04_102007") != -1) {
+	}else if(imgSrc.indexOf("2018-06-04_102007") != -1) {
 		return '下绿白上，V穿的形态是TZB3从最小发展成最大的过程。';
 	}else if(imgSrc.indexOf("2018-06-04_093303") != -1) {
 		return '下绿白上，倒V比较少见。';
@@ -132,6 +134,8 @@ function getStr(imgSrc) {
 		return '上绿白V下，二分集表现为两份集束走向。';
 	}else if(imgSrc.indexOf("2018-06-06_120214") != -1) {
 		return '下绿白V下，二分表现确认现价线和距离可大可小。';
+	}else if(imgSrc.indexOf("2018-05-28_080202") != -1) {
+		return '上黄白下，下穿的时候TZB最小。';
 	}
 	
 	
