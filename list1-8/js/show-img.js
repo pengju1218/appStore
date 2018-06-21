@@ -81,7 +81,7 @@ function getStr(imgSrc) {
 	}else if(imgSrc.indexOf("2018-06-02_153245") != -1) {
 		return '上红白下，当前集的V高度集束，几乎是一条线的，而且前面的红特别短，只有一天。';
 	}else if(imgSrc.indexOf("2018-06-02_153648") != -1||imgSrc.indexOf("2018-06-02_154659") != -1) {
-		return '上红白下，当前的红色较长。V可大可小，大V多为横穿，小V先集再形成V。';
+		return '上红白下，下穿的时候5日均线是向上或者平走。';
 	}else if(imgSrc.indexOf("2018-06-02_184933") != -1) {
 		return '上长绿，变种有很多，有V横穿。';
 	}else if(imgSrc.indexOf("2018-06-03_090356") != -1) {
@@ -99,7 +99,7 @@ function getStr(imgSrc) {
 	}else if(imgSrc.indexOf("2018-06-03_210405") != -1) {
 		return '下长红，短下一般，这类确认现价线还有向上距离变大的情况出现。';
 	}else if(imgSrc.indexOf("2018-06-03_212220") != -1) {
-		return '下长红，此形态的股票，要么确认已经靠近现价线或者确认线已经下穿了；特殊的当TZB3达不到100的时候，所表现的是确认现价线之间的距离会变大。';
+		return '下长红，向上一般，此形态的股票，要么确认已经靠近现价线已经接触了。';
 	}else if(imgSrc.indexOf("2018-06-04_102007") != -1) {
 		return '下绿白上，V穿的形态是TZB3从最小发展成最大的过程。';
 	}else if(imgSrc.indexOf("2018-06-04_093303") != -1) {
@@ -113,7 +113,7 @@ function getStr(imgSrc) {
 	}else if(imgSrc.indexOf("2018-06-04_094750") != -1) {
 		return '下绿白上，弯折上的K线的下影线长的确认现价线的距离变大；K线的上影线长的确认现价线的距离变小。';
 	}else if(imgSrc.indexOf("2018-06-04_110905") != -1) {
-		return '下长白，全V的前方有平集束，全V的变种较多并且常见，要注意，但不会变太大，多是现价确认线不一样。';
+		return '下长白，全V的前方有TZB集束，全V的变种较多并且常见，要注意，但不会变太大，多是现价确认线不一样。';
 	}else if(imgSrc.indexOf("2018-06-04_125945") != -1) {
 		return '上长白，向下有明显的确认线穿现价线。';
 	}else if(imgSrc.indexOf("2018-06-04_130418") != -1) {
@@ -136,6 +136,12 @@ function getStr(imgSrc) {
 		return '下绿白V下，二分表现确认现价线和距离可大可小。';
 	}else if(imgSrc.indexOf("2018-05-28_080202") != -1) {
 		return '上黄白下，下穿的时候TZB最小。';
+	}else if(imgSrc.indexOf("2018-06-12_100710") != -1) {
+		return '上长绿，下穿的上影线一般的情况下较长。';
+	}else if(imgSrc.indexOf("2018-05-31_095853") != -1) {
+		return '上长绿，集向上的下影线一般的情况下较长。';
+	}else if(imgSrc.indexOf("2018-05-30_110825") != -1) {
+		return '上绿白上,上穿的时候TZB集束都是向上的。';
 	}
 	
 	
