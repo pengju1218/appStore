@@ -86,8 +86,8 @@ function getStr(imgSrc) {
 		return '上长绿，变种有很多，有V横穿。';
 	}else if(imgSrc.indexOf("2018-06-03_090356") != -1) {
 		return '上长红，直上的时候，确认线会向现价线靠近。';
-	}else if(imgSrc.indexOf("2018-06-03_103334") != -1) {
-		return '上白红上，多发生于庄家均线上穿或者接触的时候，直上的时候，有两种一种TZB集束在低们，但是相当集中；另一种是分散的，但是已经接近高位了。';
+	}else if(imgSrc.indexOf("2018-06-03_103334") != -1||imgSrc.indexOf("2018-06-05_140126") != -1) {
+		return '上白红上，直上集中或分散的时候，趋势线非常的集中并向上，现价确认线的距离变大，并且当天还是小阴小阳。';
 	}else if(imgSrc.indexOf("2018-06-03_104332") != -1) {
 		return '上白红上，红三兵，前方的TZB3已经到达100，当前的TZB3不会减少太多，会在高位。';
 	}else if(imgSrc.indexOf("2018-06-03_111247") != -1) {
@@ -132,16 +132,18 @@ function getStr(imgSrc) {
 		return '上绿白V下，半V未穿的表现为TZB3最高的时候，表现为上穿；当TZB3在中间的时候，表现为确认线已经上穿，并且确认现价线之间的距离变短。';
 	}else if(imgSrc.indexOf("2018-05-25_213214") != -1) {
 		return '上绿白V下，二分集表现为两份集束走向。';
-	}else if(imgSrc.indexOf("2018-06-06_120214") != -1) {
-		return '下绿白V下，二分表现确认现价线和距离可大可小。';
+	}else if(imgSrc.indexOf("2018-06-22_100639") != -1) {
+		return '下绿白V下，倒V-更下趋势线一般有明显小折的可以选择，并且现价确认线的低点比之前的要高。';
 	}else if(imgSrc.indexOf("2018-05-28_080202") != -1) {
 		return '上黄白下，下穿的时候TZB最小。';
 	}else if(imgSrc.indexOf("2018-06-12_100710") != -1) {
 		return '上长绿，下穿的上影线一般的情况下较长。';
 	}else if(imgSrc.indexOf("2018-05-31_095853") != -1) {
-		return '上长绿，集向上的下影线一般的情况下较长。';
+		return '上长绿，集向上的时候有一定趋势线有一定的弧度。';
 	}else if(imgSrc.indexOf("2018-05-30_110825") != -1) {
 		return '上绿白上,上穿的时候TZB集束都是向上的。';
+	}else if(imgSrc.indexOf("2018-06-26_105103") != -1) {
+		return '下白红上,向上-TZB集向下，趋势线一直向下最后走平或者发散。';
 	}
 	
 	
